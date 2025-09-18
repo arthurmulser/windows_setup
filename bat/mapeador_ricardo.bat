@@ -16,10 +16,10 @@ net use %UNIDADE% %CAMINHO_REDE% /user:%USUARIO% %SENHA% /persistent:yes
 
 :: Verificar se o mapeamento foi bem-sucedido
 if %ERRORLEVEL% neq 0 (
-    echo Erro ao mapear a unidade de rede.
+    echo erro ao mapear a unidade de rede.
     pause
     exit /b %ERRORLEVEL%
 )
 
-echo Unidade de rede mapeada com sucesso!
+echo unidade de rede mapeada com sucesso!
 exit
