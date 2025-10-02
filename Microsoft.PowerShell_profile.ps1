@@ -1,4 +1,5 @@
 function dc3 { # ok;
+function du3 { # ok;
     Write-Host "docker compose up -d;"
     docker compose up -d
 }
@@ -6,28 +7,25 @@ function dc3 { # ok;
 function helpd3 {
     Write-Host "docker:"
     Write-Host "docker compose up -d;"
+    Write-Host "du3 - docker compose up -d;"
     Write-Host "--- --- --- --- ---"
 }
 
 ### ### ###
 
+function ga3 { # ok;
+    Write-Host "executando: git add .;"
+    git add .
+}
+
 function gc3 { # ok;
     param(
         [Parameter(Mandatory=$true)]
-        [string]$message
-    )
-    $date = Get-Date -Format "yyyyMMdd"
-    Write-Host "executando: git commit -m standard;"
-    git commit -m "$date - $message;"
-}
-
-function gp3 { # ok;
-    Write-Host "executando: git push origin main;"
-    git push origin main
-}
+@@ -28,45 +33,46 @@
 
 function helpg3 {
     Write-Host "git:"
+    Write-Host "ga3 - git add .;"
     Write-Host "gc3 - git commit -m standard;"
     Write-Host "gp3 - git push origin main;"
     Write-Host "--- --- --- --- ---"
@@ -70,4 +68,3 @@ function helpc3 {
 function p3 {
     Write-Host ". cifraoPROFILE;"
     . $PROFILE
-}
