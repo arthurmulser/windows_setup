@@ -46,6 +46,11 @@ function fb3 { # ok;
     flutter build apk  
 }
 
+function fc3 { # ok;
+    Write-Host "executando: flutter cleam;"
+    flutter clean 
+}
+
 function fd3 { # ok;
     Write-Host "executando: flutter devices;"
     flutter devices
@@ -59,6 +64,7 @@ function fr3 { # ok;
 function helpf3 {
     Write-Host "flutter:"
     Write-Host "fb3 - flutter build apk;"
+    Write-Host "fc3 - flutter clean;"
     Write-Host "fd3 - flutter devices;"
     Write-Host "fr3 - flutter run;"
     Write-Host "--- --- --- --- ---"
