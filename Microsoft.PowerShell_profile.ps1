@@ -47,7 +47,7 @@ function fb3 { # ok;
 }
 
 function fc3 { # ok;
-    Write-Host "executando: flutter cleam;"
+    Write-Host "executando: flutter clean;"
     flutter clean 
 }
 
