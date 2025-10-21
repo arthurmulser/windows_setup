@@ -1,13 +1,21 @@
 ### ### ### docker;
 
+function dn3 { # ok;
+    Write-Host "executando: docker compose exec node npm install, docker compose exec node npm run dev;"
+    docker compose exec node npm install
+    docker compose exec node npm run dev
+    Write-Host "ok;"
+}
+
 function du3 { # ok;
-    Write-Host "docker compose up -d;"
+    Write-Host "executando: docker compose up -d;"
     docker compose up -d
     Write-Host "ok;"
 }
 
 function helpd3 {
     Write-Host "docker:"
+    Write-Host "dn3 - docker compose exec node npm install, docker compose exec node npm run dev;"
     Write-Host "du3 - docker compose up -d;"
     Write-Host "--- --- --- --- ---"
 }
@@ -89,6 +97,12 @@ function lc3 { # ok;
     php artisan view:clear
     php artisan optimize:clear 
     Write-Host "ok;"
+}
+
+function helpl3 {
+    Write-Host "laravel:"
+    Write-Host "lc3 - php artisan config:clear, php artisan route:clear, php artisan view:clear, php artisan optimize:clear;"
+    Write-Host "--- --- --- --- ---"
 }
 
 ### ### ### code;
