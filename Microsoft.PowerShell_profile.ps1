@@ -8,7 +8,8 @@ function dn3 { # ok;
 }
 
 function du3 { # ok;
-    Write-Host "executando: docker compose up -d;"
+    Write-Host "executando: docker-compose down, docker compose up -d;"
+    docker-compose down
     docker compose up -d
     Write-Host "ok;"
 }
@@ -16,7 +17,7 @@ function du3 { # ok;
 function helpd3 {
     Write-Host "docker:"
     Write-Host "dn3 - docker compose exec node npm install, docker compose exec node npm run dev;"
-    Write-Host "du3 - docker compose up -d;"
+    Write-Host "du3 - docker-compose down, docker compose up -d;"
     Write-Host "--- --- --- --- ---"
 }
 
