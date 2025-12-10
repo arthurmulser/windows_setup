@@ -106,6 +106,27 @@ function helpl3 {
     Write-Host "--- --- --- --- ---"
 }
 
+### ### ### python;
+
+function pr3 { # ok;
+    Write-Host "executando: pip install -r requirements.txt;"
+    pip install -r requirements.txt
+    Write-Host "ok;"
+}
+
+function pv3 { # ok;
+    Write-Host "executando: .\venv\Scripts\Activate.ps1;"
+    .\venv\Scripts\Activate.ps1
+    Write-Host "ok;"
+}
+
+function helpp3 {
+    Write-Host "python:"
+    Write-Host "pr3 - pip install -r requirements.txt;"
+    Write-Host "pv3 - .\venv\Scripts\Activate.ps1;"
+    Write-Host "--- --- --- --- ---"
+}
+
 ### ### ### code;
 
 function helpc3 {
