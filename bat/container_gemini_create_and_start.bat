@@ -23,7 +23,7 @@ echo ===============================
 echo create new;
 echo ===============================
 
-docker run -dit --name %CONTAINER_NAME% %IMAGE_NAME%
+docker run -dit --name %CONTAINER_NAME% -v %PROJECT_DIR%:/app %IMAGE_NAME%
 
 echo ===============================
 echo opening terminal inside container;
