@@ -7,6 +7,9 @@ REM ===== nome da imagem e container =====
 set IMAGE_NAME=gemini-cli-dev
 set CONTAINER_NAME=gemini-cli-dev
 
+REM ===== chave da api do claude =====
+set ANTHROPIC_API_KEY=SEU_TOKEN_AQUI
+
 echo ===============================
 echo build;
 echo ===============================
@@ -23,7 +26,11 @@ echo ===============================
 echo create new;
 echo ===============================
 
-docker run -dit --name %CONTAINER_NAME% -v %PROJECT_DIR%:/app %IMAGE_NAME%
+docker run -dit ^
+--name %CONTAINER_NAME% ^
+-v %PROJECT_DIR%:/app ^
+-e ANTHROPIC_API_KEY=%ANTHROPIC_API_KEY% ^
+%IMAGE_NAME%
 
 echo ===============================
 echo opening terminal inside container;
