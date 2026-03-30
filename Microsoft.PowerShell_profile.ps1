@@ -108,6 +108,12 @@ function helpl3 {
 
 ### ### ### python;
 
+function pe3 ($arquivo) { # ok;
+    Write-Host "executando: python $arquivo" 
+    python $arquivo
+    Write-Host "ok;"
+}
+
 function pr3 { # ok;
     Write-Host "executando: pip install -r requirements.txt;"
     pip install -r requirements.txt
@@ -122,6 +128,7 @@ function pv3 { # ok;
 
 function helpp3 {
     Write-Host "python:"
+    Write-Host "pe3 - python arquivo.py;"
     Write-Host "pr3 - pip install -r requirements.txt;"
     Write-Host "pv3 - .\venv\Scripts\Activate.ps1;"
     Write-Host "--- --- --- --- ---"
