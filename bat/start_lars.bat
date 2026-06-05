@@ -3,7 +3,7 @@
 setlocal enabledelayedexpansion
 
 REM defina a pasta base aqui;
-set BASE_PATH=C:\_Projects\laravel_mars
+set BASE_PATH=E:\_projetos\laravel_mars
 
 REM definir portas;
 set LARAVEL_PORT=8014
