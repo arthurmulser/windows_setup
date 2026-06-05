@@ -1,7 +1,7 @@
 @echo off
 
 REM ===== caminho da pasta onde esta o dockerfile =====
-set PROJECT_DIR=C:\_Projects
+set PROJECT_DIR=E:\_projetos
 
 REM ===== nome da imagem e container =====
 set IMAGE_NAME=gemini-cli-dev
