@@ -1,0 +1,88 @@
+arthur@arthur-Latitude-3540:/run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b/_sh$ npm install -g @google/gemini-cli
+npm error code EACCES
+npm error syscall mkdir
+npm error path /usr/lib/node_modules/@google
+npm error errno -13
+npm error Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/@google'
+npm error     at async mkdir (node:internal/fs/promises:859:10)
+npm error     at async /usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:590:20
+npm error     at async Promise.allSettled (index 0)
+npm error     at async #reifyPackages (/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:322:11)
+npm error     at async Arborist.reify (/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:128:5)
+npm error     at async Install.exec (/usr/lib/node_modules/npm/lib/commands/install.js:157:5)
+npm error     at async Npm.exec (/usr/lib/node_modules/npm/lib/npm.js:193:9)
+npm error     at async module.exports (/usr/lib/node_modules/npm/lib/cli/entry.js:67:5) {
+npm error   errno: -13,
+npm error   code: 'EACCES',
+npm error   syscall: 'mkdir',
+npm error   path: '/usr/lib/node_modules/@google'
+npm error }
+npm error
+npm error The operation was rejected by your operating system.
+npm error It is likely you do not have the permissions to access this file as the current user
+npm error
+npm error If you believe this might be a permissions issue, please double-check the permissions of the file and its containing directories, or try running the command again as root/Administrator.
+npm notice
+npm notice New minor version of npm available! 11.16.0 -> 11.18.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.18.0
+npm notice To update run: npm install -g npm@11.18.0
+npm notice
+npm error A complete log of this run can be found in: /home/arthur/.npm/_logs/2026-07-06T14_00_10_839Z-debug-0.log
+arthur@arthur-Latitude-3540:/run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b/_sh$ node -v
+npm -v
+which node
+which npm
+v24.18.0
+11.16.0
+/usr/bin/node
+/usr/bin/npm
+arthur@arthur-Latitude-3540:/run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b/_sh$ sudo npm install -g @google/gemini-cli
+[sudo: authenticate] Password:     
+
+added 5 packages in 5s
+npm warn allow-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn allow-scripts   @github/keytar@7.10.6 (install: node script/install.js || npm run build)
+npm warn allow-scripts
+npm warn allow-scripts Run `npm approve-scripts --allow-scripts-pending` to review, or `npm approve-scripts <pkg>` to allow.
+npm notice
+npm notice New minor version of npm available! 11.16.0 -> 11.18.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.18.0
+npm notice To update run: npm install -g npm@11.18.0
+npm notice
+arthur@arthur-Latitude-3540:/run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b/_sh$ gemini --version
+0.49.0
+arthur@arthur-Latitude-3540:/run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b/_sh$ gemini
+
+ ▝▜▄      ▗█▀▀▜▙▝█▛▀▀▌▜██▖▟██▘▜█▘▜██▖▝█▛▝█▛
+   ▝▜▄    █▌     █▙▟  ▐█▝█▛▐█ ▐█ ▐█▝█▖█▌ █▌
+  ▗▟▀     ▜▙ ▝█▛ █▌▝ ▖▐█   ▐█ ▐█ ▐█ ▝██▌ █▌
+ ▝▀        ▀▀▀▀▘▝▀▀▀▀▘▀▀▘  ▀▀▘▀▀▘▀▀▘ ▝▀▀▝▀▀
+
+ Gemini CLI v0.49.0
+
+
+
+Tips for getting started:
+1. Create GEMINI.md files to customize your interactions
+2. /help for more information
+3. Ask coding questions, edit code or run commands
+4. Be specific for the best results
+
+ℹ Skipping project agents due to untrusted folder. To enable, ensure that the project root is trusted.
+
+ ╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+ │                                                                                                                                                                                                                                          │
+ │ Do you trust the files in this folder?                                                                                                                                                                                                   │
+ │                                                                                                                                                                                                                                          │
+ │ Trusting a folder allows Gemini CLI to load its local configurations, including custom commands, hooks, MCP servers, agent skills, and settings. These configurations could execute code on your behalf or change the behavior of the    │
+ │ CLI.                                                                                                                                                                                                                                     │
+ │                                                                                                                                                                                                                                          │
+ │                                                                                                                                                                                                                                          │
+ │ ● 1. Trust folder (_sh)                                                                                                                                                                                                                  │
+ │   2. Trust parent folder (16f35587-adb2-4d60-a70a-d79b1401cf7b)                                                                                                                                                                          │
+ │   3. Don't trust                                                                                                                                                                                                                         │
+ │                                                                                                                                                                                                                                          │
+ ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+
+
