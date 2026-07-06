@@ -1,0 +1,71 @@
+arthur@arthur-Latitude-3540:/run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b/_projetos$ wget https://dev.mysql.com/get/mysql-apt-config_0.8.29-1_all.deb
+--2026-07-05 22:13:59--  https://dev.mysql.com/get/mysql-apt-config_0.8.29-1_all.deb
+Resolving dev.mysql.com (dev.mysql.com)... 2600:1419:6200:1196::2e31, 2600:1419:6200:11bf::2e31, 23.10.56.103
+Connecting to dev.mysql.com (dev.mysql.com)|2600:1419:6200:1196::2e31|:443... connected.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: https://repo.mysql.com//mysql-apt-config_0.8.29-1_all.deb [following]
+--2026-07-05 22:14:00--  https://repo.mysql.com//mysql-apt-config_0.8.29-1_all.deb
+Resolving repo.mysql.com (repo.mysql.com)... 2600:1419:6200:11b4::1d68, 2600:1419:6200:119c::1d68, 23.212.86.47
+Connecting to repo.mysql.com (repo.mysql.com)|2600:1419:6200:11b4::1d68|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 18172 (18K) [application/x-debian-package]
+Saving to: ‘mysql-apt-config_0.8.29-1_all.deb’
+
+mysql-apt-config_0.8.29-1_all.deb                         100%[===================================================================================================================================>]  17.75K  --.-KB/s    in 0s      
+
+2026-07-05 22:14:00 (73.5 MB/s) - ‘mysql-apt-config_0.8.29-1_all.deb’ saved [18172/18172]
+
+arthur@arthur-Latitude-3540:/run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b/_projetos$ sudo dpkg -i mysql-apt-config_0.8.29-1_all.deb
+[sudo: authenticate] Password:     
+Selecting previously unselected package mysql-apt-config.
+(Reading database… 214976 files and directories currently installed.)
+Preparing to unpack mysql-apt-config_0.8.29-1_all.deb…
+Unpacking mysql-apt-config (0.8.29-1)…
+Setting up mysql-apt-config (0.8.29-1)…
+arthur@arthur-Latitude-3540:/run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b/_projetos$ sudo apt update
+Hit:1 https://packages.microsoft.com/repos/code stable InRelease
+Hit:2 http://security.ubuntu.com/ubuntu resolute-security InRelease                                                                                             
+Hit:3 https://dl.google.com/linux/chrome-stable/deb stable InRelease                                                                                           
+Hit:4 http://archive.ubuntu.com/ubuntu resolute InRelease           
+Hit:5 http://archive.ubuntu.com/ubuntu resolute-updates InRelease
+Hit:6 http://archive.ubuntu.com/ubuntu resolute-backports InRelease
+Get:7 http://repo.mysql.com/apt/ubuntu lunar InRelease [17.9 kB]
+Err:7 http://repo.mysql.com/apt/ubuntu lunar InRelease
+  The following signatures were invalid: EXPKEYSIG B7B3B788A8D3785C MySQL Release Engineering <mysql-build@oss.oracle.com>
+Warning: OpenPGP signature verification failed: http://repo.mysql.com/apt/ubuntu lunar InRelease: The following signatures were invalid: EXPKEYSIG B7B3B788A8D3785C MySQL Release Engineering <mysql-build@oss.oracle.com>
+Error: The repository 'http://repo.mysql.com/apt/ubuntu lunar InRelease' is not signed.
+Notice: Updating from such a repository can't be done securely, and is therefore disabled by default.
+Notice: See apt-secure(8) manpage for repository creation and user configuration details.
+arthur@arthur-Latitude-3540:/run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b/_projetos$ sudo apt install mysql-workbench-community -y
+                                
+No apt package "mysql-workbench-community", but there is a snap with that name.
+Try "snap install mysql-workbench-community"
+
+Error: Unable to locate package mysql-workbench-community
+arthur@arthur-Latitude-3540:/run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b/_projetos$ sudo rm /etc/apt/sources.list.d/mysql.list
+sudo rm /etc/apt/sources.list.d/mysql-apt-config.list
+rm: cannot remove '/etc/apt/sources.list.d/mysql-apt-config.list': No such file or directory
+arthur@arthur-Latitude-3540:/run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b/_projetos$ sudo apt update
+Hit:1 https://packages.microsoft.com/repos/code stable InRelease
+Hit:2 https://dl.google.com/linux/chrome-stable/deb stable InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu resolute InRelease           
+Hit:4 http://security.ubuntu.com/ubuntu resolute-security InRelease
+Hit:5 http://archive.ubuntu.com/ubuntu resolute-updates InRelease
+Hit:6 http://archive.ubuntu.com/ubuntu resolute-backports InRelease
+All packages are up to date.    
+arthur@arthur-Latitude-3540:/run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b/_projetos$ sudo snap install mysql-workbench-community
+mysql-workbench-community 8.0.36 from Tonin Bolzan (tonybolzan) installed
+arthur@arthur-Latitude-3540:/run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b/_projetos$ snap run mysql-workbench-community
+Using /snap/mysql-workbench-community/13/usr/lib/x86_64-linux-gnu/libproj.so.
+Gtk-Message: 22:19:39.132: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+
+(mysql-workbench-bin:23819): Gtk-WARNING **: 22:19:39.196: GTK+ module /snap/mysql-workbench-community/13/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 22:19:39.196: Failed to load module "canberra-gtk-module"
+
+(mysql-workbench-bin:23819): Gtk-WARNING **: 22:19:39.200: GTK+ module /snap/mysql-workbench-community/13/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 22:19:39.200: Failed to load module "canberra-gtk-module"
+
+** (mysql-workbench-bin:23819): WARNING **: 22:20:05.573: atk-bridge: get_device_events_reply: unknown signature
+

@@ -1,0 +1,165 @@
+arthur@arthur-Latitude-3540:~$ sudo apt update
+[sudo: authenticate] Password:     
+Get:1 https://dl.google.com/linux/chrome-stable/deb stable InRelease [1,825 B]
+Get:2 https://dl.google.com/linux/chrome-stable/deb stable/main amd64 Packages [1,214 B]
+Get:3 http://archive.ubuntu.com/ubuntu resolute InRelease [136 kB]              
+Get:4 http://security.ubuntu.com/ubuntu resolute-security InRelease [137 kB]
+Get:5 http://security.ubuntu.com/ubuntu resolute-security/main amd64 Packages [265 kB]     
+Get:6 http://security.ubuntu.com/ubuntu resolute-security/main Translation-en [69.2 kB]
+Get:7 http://security.ubuntu.com/ubuntu resolute-security/main amd64 Components [31.1 kB]
+Get:8 http://security.ubuntu.com/ubuntu resolute-security/main Icons (48x48) [14.3 kB]        
+Get:9 http://security.ubuntu.com/ubuntu resolute-security/main Icons (64x64) [20.3 kB]
+Get:10 http://security.ubuntu.com/ubuntu resolute-security/main amd64 c-n-f Metadata [4,348 B]
+Get:11 http://security.ubuntu.com/ubuntu resolute-security/restricted amd64 Packages [240 kB]   
+Get:12 http://security.ubuntu.com/ubuntu resolute-security/restricted Translation-en [44.3 kB]
+Get:13 http://security.ubuntu.com/ubuntu resolute-security/restricted amd64 c-n-f Metadata [396 B]
+Get:14 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 Packages [128 kB]
+Get:15 http://security.ubuntu.com/ubuntu resolute-security/universe Translation-en [40.2 kB]
+Get:16 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 Components [43.1 kB]
+Get:17 http://archive.ubuntu.com/ubuntu resolute-updates InRelease [137 kB]               
+Get:18 http://security.ubuntu.com/ubuntu resolute-security/universe Icons (48x48) [16.1 kB]          
+Get:19 http://security.ubuntu.com/ubuntu resolute-security/universe Icons (64x64) [25.3 kB]      
+Get:20 http://security.ubuntu.com/ubuntu resolute-security/universe Icons (64x64@2) [29 B]       
+Get:21 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 c-n-f Metadata [3,512 B]
+Get:22 http://security.ubuntu.com/ubuntu resolute-security/multiverse amd64 Components [212 B]       
+Get:23 http://security.ubuntu.com/ubuntu resolute-security/multiverse Icons (48x48) [29 B]               
+Get:24 http://security.ubuntu.com/ubuntu resolute-security/multiverse Icons (64x64) [29 B]  
+Get:25 http://security.ubuntu.com/ubuntu resolute-security/multiverse Icons (64x64@2) [29 B]      
+Get:26 http://security.ubuntu.com/ubuntu resolute-security/multiverse amd64 c-n-f Metadata [120 B]    
+Get:27 http://archive.ubuntu.com/ubuntu resolute-backports InRelease [136 kB]                            
+Get:28 http://archive.ubuntu.com/ubuntu resolute/main amd64 Packages [1,480 kB]
+Get:29 http://archive.ubuntu.com/ubuntu resolute/main amd64 c-n-f Metadata [32.4 kB]
+Get:30 http://archive.ubuntu.com/ubuntu resolute/universe amd64 Packages [16.0 MB]
+Get:31 http://archive.ubuntu.com/ubuntu resolute/universe Translation-en [6,329 kB]
+Get:32 http://archive.ubuntu.com/ubuntu resolute/universe amd64 Components [4,556 kB]
+Get:33 http://archive.ubuntu.com/ubuntu resolute/universe Icons (48x48) [3,633 kB]
+Get:34 http://archive.ubuntu.com/ubuntu resolute/universe Icons (64x64) [7,483 kB]
+Get:35 http://archive.ubuntu.com/ubuntu resolute/universe Icons (64x64@2) [122 kB]
+Get:36 http://archive.ubuntu.com/ubuntu resolute/universe amd64 c-n-f Metadata [313 kB]
+Get:37 http://archive.ubuntu.com/ubuntu resolute/multiverse amd64 Packages [290 kB]
+Get:38 http://archive.ubuntu.com/ubuntu resolute/multiverse Translation-en [127 kB]
+Get:39 http://archive.ubuntu.com/ubuntu resolute/multiverse amd64 Components [50.0 kB]
+Get:40 http://archive.ubuntu.com/ubuntu resolute/multiverse Icons (48x48) [76.4 kB]
+Get:41 http://archive.ubuntu.com/ubuntu resolute/multiverse Icons (64x64) [179 kB]
+Get:42 http://archive.ubuntu.com/ubuntu resolute/multiverse Icons (64x64@2) [904 B]
+Get:43 http://archive.ubuntu.com/ubuntu resolute/multiverse amd64 c-n-f Metadata [8,276 B]
+Get:44 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 Packages [302 kB]
+Get:45 http://archive.ubuntu.com/ubuntu resolute-updates/main Translation-en [79.6 kB]
+Get:46 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 Components [49.4 kB]
+Get:47 http://archive.ubuntu.com/ubuntu resolute-updates/main Icons (48x48) [19.2 kB]
+Get:48 http://archive.ubuntu.com/ubuntu resolute-updates/main Icons (64x64) [26.8 kB]
+Get:49 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 c-n-f Metadata [5,688 B]
+Get:50 http://archive.ubuntu.com/ubuntu resolute-updates/restricted amd64 Packages [241 kB]
+Get:51 http://archive.ubuntu.com/ubuntu resolute-updates/restricted Translation-en [44.6 kB]
+Get:52 http://archive.ubuntu.com/ubuntu resolute-updates/restricted amd64 c-n-f Metadata [392 B]
+Get:53 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 Packages [190 kB]
+Get:54 http://archive.ubuntu.com/ubuntu resolute-updates/universe Translation-en [58.4 kB]
+Get:55 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 Components [134 kB]
+Get:56 http://archive.ubuntu.com/ubuntu resolute-updates/universe Icons (48x48) [38.7 kB]
+Get:57 http://archive.ubuntu.com/ubuntu resolute-updates/universe Icons (64x64) [59.5 kB]
+Get:58 http://archive.ubuntu.com/ubuntu resolute-updates/universe Icons (64x64@2) [29 B]
+Get:59 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 c-n-f Metadata [4,704 B]
+Get:60 http://archive.ubuntu.com/ubuntu resolute-updates/multiverse amd64 Packages [3,328 B]
+Get:61 http://archive.ubuntu.com/ubuntu resolute-updates/multiverse Translation-en [772 B]
+Get:62 http://archive.ubuntu.com/ubuntu resolute-updates/multiverse amd64 Components [216 B]
+Get:63 http://archive.ubuntu.com/ubuntu resolute-updates/multiverse Icons (48x48) [29 B]
+Get:64 http://archive.ubuntu.com/ubuntu resolute-updates/multiverse Icons (64x64) [29 B]
+Get:65 http://archive.ubuntu.com/ubuntu resolute-updates/multiverse Icons (64x64@2) [29 B]
+Get:66 http://archive.ubuntu.com/ubuntu resolute-updates/multiverse amd64 c-n-f Metadata [256 B]
+Get:67 http://archive.ubuntu.com/ubuntu resolute-backports/main amd64 Components [212 B]
+Get:68 http://archive.ubuntu.com/ubuntu resolute-backports/main Icons (48x48) [29 B]
+Get:69 http://archive.ubuntu.com/ubuntu resolute-backports/main Icons (64x64) [29 B]
+Get:70 http://archive.ubuntu.com/ubuntu resolute-backports/main Icons (64x64@2) [29 B]
+Get:71 http://archive.ubuntu.com/ubuntu resolute-backports/main amd64 c-n-f Metadata [112 B]
+Get:72 http://archive.ubuntu.com/ubuntu resolute-backports/restricted amd64 Components [216 B]
+Get:73 http://archive.ubuntu.com/ubuntu resolute-backports/restricted Icons (48x48) [29 B]
+Get:74 http://archive.ubuntu.com/ubuntu resolute-backports/restricted Icons (64x64) [29 B]
+Get:75 http://archive.ubuntu.com/ubuntu resolute-backports/restricted Icons (64x64@2) [29 B]
+Get:76 http://archive.ubuntu.com/ubuntu resolute-backports/restricted amd64 c-n-f Metadata [120 B]
+Get:77 http://archive.ubuntu.com/ubuntu resolute-backports/universe amd64 Components [216 B]
+Get:78 http://archive.ubuntu.com/ubuntu resolute-backports/universe Icons (48x48) [29 B]
+Get:79 http://archive.ubuntu.com/ubuntu resolute-backports/universe Icons (64x64) [29 B]
+Get:80 http://archive.ubuntu.com/ubuntu resolute-backports/universe Icons (64x64@2) [29 B]
+Get:81 http://archive.ubuntu.com/ubuntu resolute-backports/universe amd64 c-n-f Metadata [116 B]
+Get:82 http://archive.ubuntu.com/ubuntu resolute-backports/multiverse amd64 Components [216 B]
+Get:83 http://archive.ubuntu.com/ubuntu resolute-backports/multiverse Icons (48x48) [29 B]
+Get:84 http://archive.ubuntu.com/ubuntu resolute-backports/multiverse Icons (64x64) [29 B]
+Get:85 http://archive.ubuntu.com/ubuntu resolute-backports/multiverse Icons (64x64@2) [29 B]
+Get:86 http://archive.ubuntu.com/ubuntu resolute-backports/multiverse amd64 c-n-f Metadata [120 B]
+Fetched 43.4 MB in 6s (6,907 kB/s)                                                                                                                                                                                                   
+166 packages can be upgraded. Run 'apt list --upgradable' to see them.
+arthur@arthur-Latitude-3540:~$ sudo apt install -y code
+Error: Unable to locate package code
+arthur@arthur-Latitude-3540:~$ sudo apt install -y wget gpg apt-transport-https
+wget is already the newest version (1.25.0-2ubuntu4).
+wget set to manually installed.
+gpg is already the newest version (2.4.8-4ubuntu3).
+gpg set to manually installed.
+The following package was automatically installed and is no longer required:
+  grub-pc-bin
+Use 'sudo apt autoremove' to remove it.
+
+Installing:
+  apt-transport-https
+
+Summary:
+  Upgrading: 0, Installing: 1, Removing: 0, Not Upgrading: 166
+  Download size: 3,928 B
+  Space needed: 36.9 kB / 131 GB available
+
+Get:1 http://archive.ubuntu.com/ubuntu resolute/universe amd64 apt-transport-https all 3.2.0 [3,928 B]
+Fetched 3,928 B in 0s (34.7 kB/s)               
+Selecting previously unselected package apt-transport-https.
+(Reading database… 151534 files and directories currently installed.)
+Preparing to unpack …/apt-transport-https_3.2.0_all.deb…
+Unpacking apt-transport-https (3.2.0)…
+Setting up apt-transport-https (3.2.0)…
+arthur@arthur-Latitude-3540:~$ wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/packages.microsoft.gpg > /dev/null
+arthur@arthur-Latitude-3540:~$ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
+deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main
+arthur@arthur-Latitude-3540:~$ sudo apt update
+Get:1 https://packages.microsoft.com/repos/code stable InRelease [3,590 B]
+Get:2 https://packages.microsoft.com/repos/code stable/main amd64 Packages [26.5 kB]                   
+Hit:3 https://dl.google.com/linux/chrome-stable/deb stable InRelease                                 
+Hit:4 http://security.ubuntu.com/ubuntu resolute-security InRelease 
+Hit:5 http://archive.ubuntu.com/ubuntu resolute InRelease
+Hit:6 http://archive.ubuntu.com/ubuntu resolute-updates InRelease
+Hit:7 http://archive.ubuntu.com/ubuntu resolute-backports InRelease
+Fetched 30.1 kB in 1s (30.3 kB/s)
+166 packages can be upgraded. Run 'apt list --upgradable' to see them.
+arthur@arthur-Latitude-3540:~$ sudo apt install -y code
+The following package was automatically installed and is no longer required:
+  grub-pc-bin
+Use 'sudo apt autoremove' to remove it.
+
+Installing:
+  code
+
+Installing dependencies:
+  socat
+
+Summary:
+  Upgrading: 0, Installing: 2, Removing: 0, Not Upgrading: 166
+  Download size: 200 MB
+  Space needed: 919 MB / 131 GB available
+
+Get:1 http://archive.ubuntu.com/ubuntu resolute/main amd64 socat amd64 1.8.1.1-1 [402 kB]
+Get:2 https://packages.microsoft.com/repos/code stable/main amd64 code amd64 1.127.0-1782814776 [199 MB]
+Fetched 200 MB in 10s (20.4 MB/s)                                                                                                                                                                                                    
+Preconfiguring packages ...
+Selecting previously unselected package code.
+(Reading database… 151538 files and directories currently installed.)
+Preparing to unpack …/code_1.127.0-1782814776_amd64.deb…
+Unpacking code (1.127.0-1782814776)…
+Selecting previously unselected package socat.
+Preparing to unpack …/socat_1.8.1.1-1_amd64.deb…
+Unpacking socat (1.8.1.1-1)…
+Setting up code (1.127.0-1782814776)…
+Setting up socat (1.8.1.1-1)…
+Processing triggers for desktop-file-utils (0.28-1build1)…
+Processing triggers for gnome-menus (3.38.1-1ubuntu1)…
+Processing triggers for man-db (2.13.1-1build1)…
+Processing triggers for shared-mime-info (2.4-5build3)…
+arthur@arthur-Latitude-3540:~$ code
+arthur@arthur-Latitude-3540:~$ 
+

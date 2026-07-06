@@ -1,0 +1,68 @@
+arthur@arthur-Latitude-3540:/run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b/_sh$ 
+arthur@arthur-Latitude-3540:/run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b/_sh$ node --version
+Command 'node' not found, but can be installed with:
+sudo apt install nodejs
+arthur@arthur-Latitude-3540:/run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b/_sh$ curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+sudo apt install -y nodejs
+sudo: preserving the entire environment is not supported, '-E' is ignored
+[sudo: authenticate] Password:     
+2026-07-06 10:41:15 - Installing pre-requisites
+Hit:1 https://dl.google.com/linux/chrome-stable/deb stable InRelease
+Hit:2 https://packages.microsoft.com/repos/code stable InRelease                                           
+Hit:3 http://security.ubuntu.com/ubuntu resolute-security InRelease                                        
+Hit:4 http://archive.ubuntu.com/ubuntu resolute InRelease
+Hit:5 http://archive.ubuntu.com/ubuntu resolute-updates InRelease
+Hit:6 http://archive.ubuntu.com/ubuntu resolute-backports InRelease
+7 packages can be upgraded. Run 'apt list --upgradable' to see them.
+apt-transport-https is already the newest version (3.2.0).
+ca-certificates is already the newest version (20260601~26.04.1).
+ca-certificates set to manually installed.
+curl is already the newest version (8.18.0-1ubuntu2.2).
+gnupg is already the newest version (2.4.8-4ubuntu3).
+gnupg set to manually installed.
+The following package was automatically installed and is no longer required:
+  grub-pc-bin
+Use 'sudo apt autoremove' to remove it.
+
+Summary:
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 7
+Get:1 https://deb.nodesource.com/node_24.x nodistro InRelease [12.1 kB]
+Hit:2 https://packages.microsoft.com/repos/code stable InRelease                                                            
+Get:3 https://deb.nodesource.com/node_24.x nodistro/main amd64 Packages [7,732 B]                                           
+Hit:4 https://dl.google.com/linux/chrome-stable/deb stable InRelease                                  
+Hit:5 http://archive.ubuntu.com/ubuntu resolute InRelease           
+Hit:6 http://security.ubuntu.com/ubuntu resolute-security InRelease
+Hit:7 http://archive.ubuntu.com/ubuntu resolute-updates InRelease
+Hit:8 http://archive.ubuntu.com/ubuntu resolute-backports InRelease
+Fetched 19.9 kB in 1s (17.4 kB/s)
+7 packages can be upgraded. Run 'apt list --upgradable' to see them.
+2026-07-06 10:41:21 - Repository configured successfully.
+2026-07-06 10:41:21 - To install Node.js, run: apt install nodejs -y
+2026-07-06 10:41:21 - You can use N|solid Runtime as a node.js alternative
+2026-07-06 10:41:21 - To install N|solid Runtime, run: apt install nsolid -y 
+
+The following package was automatically installed and is no longer required:
+  grub-pc-bin
+Use 'sudo apt autoremove' to remove it.
+
+Installing:
+  nodejs
+
+Summary:
+  Upgrading: 0, Installing: 1, Removing: 0, Not Upgrading: 7
+  Download size: 38.7 MB
+  Space needed: 238 MB / 95.7 GB available
+
+Get:1 https://deb.nodesource.com/node_24.x nodistro/main amd64 nodejs amd64 24.18.0-1nodesource1 [38.7 MB]
+Fetched 38.7 MB in 2s (19.8 MB/s)  
+Selecting previously unselected package nodejs.
+(Reading database… 214981 files and directories currently installed.)
+Preparing to unpack …/nodejs_24.18.0-1nodesource1_amd64.deb…
+Unpacking nodejs (24.18.0-1nodesource1)…
+Setting up nodejs (24.18.0-1nodesource1)…
+Processing triggers for man-db (2.13.1-1build1)…
+arthur@arthur-Latitude-3540:/run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b/_sh$ node -v
+v24.18.0
+arthur@arthur-Latitude-3540:/run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b/_sh$ npm -v
+11.16.0
+arthur@arthur-Latitude-3540:/run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b/_sh$ 

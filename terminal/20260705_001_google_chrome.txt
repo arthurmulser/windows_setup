@@ -1,0 +1,63 @@
+arthur@arthur-Latitude-3540:~$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+--2026-07-05 15:22:13--  https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+Resolving dl.google.com (dl.google.com)... 2800:3f0:4001:837::200e, 172.217.29.174
+Connecting to dl.google.com (dl.google.com)|2800:3f0:4001:837::200e|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 133476772 (127M) [application/x-debian-package]
+Saving to: ‘google-chrome-stable_current_amd64.deb’
+
+google-chrome-stable_current_amd64.deb                    100%[===================================================================================================================================>] 127.29M  22.0MB/s    in 6.0s    
+
+2026-07-05 15:22:19 (21.4 MB/s) - ‘google-chrome-stable_current_amd64.deb’ saved [133476772/133476772]
+
+arthur@arthur-Latitude-3540:~$ sudo apt install ./google-chrome-stable_current_amd64.deb
+[sudo: authenticate] Password:     
+Note, selecting 'google-chrome-stable' instead of './google-chrome-stable_current_amd64.deb'
+The following package was automatically installed and is no longer required:
+  grub-pc-bin
+Use 'sudo apt autoremove' to remove it.
+
+Installing:
+  google-chrome-stable
+
+Summary:
+  Upgrading: 0, Installing: 1, Removing: 0, Not Upgrading: 0
+  Download size: 0 B / 133 MB
+  Space needed: 434 MB / 132 GB available
+
+Get:1 /home/arthur/google-chrome-stable_current_amd64.deb google-chrome-stable amd64 150.0.7871.46-1 [133 MB]
+Selecting previously unselected package google-chrome-stable.
+(Reading database… 151253 files and directories currently installed.)
+Preparing to unpack …/google-chrome-stable_current_amd64.deb…
+Unpacking google-chrome-stable (150.0.7871.46-1)…
+Setting up google-chrome-stable (150.0.7871.46-1)…
+update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/x-www-browser (x-www-browser) in auto mode
+update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/gnome-www-browser (gnome-www-browser) in auto mode
+update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/google-chrome (google-chrome) in auto mode
+Processing triggers for gnome-menus (3.38.1-1ubuntu1)…
+Processing triggers for man-db (2.13.1-1build1)…
+Processing triggers for desktop-file-utils (0.28-1build1)…
+Notice: Download is performed unsandboxed as root as file '/home/arthur/google-chrome-stable_current_amd64.deb' couldn't be accessed by user '_apt'. - pkgAcquire::Run (13: Permission denied)
+arthur@arthur-Latitude-3540:~$ google-chrome
+[14091:14091:0705/152253.028410:ERROR:media/gpu/vaapi/vaapi_wrapper.cc:1796] vaInitialize failed: unknown libva error
+[14091:14091:0705/152253.034160:ERROR:ui/ozone/platform/wayland/gpu/wayland_surface_factory.cc:249] '--ozone-platform=wayland' is not compatible with Vulkan. Consider switching to '--ozone-platform=x11' or disabling Vulkan
+[14037:14071:0705/152303.542147:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[14037:14071:0705/152303.545073:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[14037:14071:0705/152303.549202:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[14037:14071:0705/152303.706490:ERROR:google_apis/gcm/engine/mcs_client.cc:702]   Error code: 401  Error message: Authentication Failed: wrong_secret
+[14037:14071:0705/152303.706535:ERROR:google_apis/gcm/engine/mcs_client.cc:704] Failed to log in to GCM, resetting connection.
+Created TensorFlow Lite XNNPACK delegate for CPU.
+[14037:14037:0705/152319.187583:ERROR:content/public/browser/web_contents_delegate.cc:310] WebContentsDelegate::CheckMediaAccessPermission: Not supported.
+[14037:14037:0705/152319.187675:ERROR:content/public/browser/web_contents_delegate.cc:310] WebContentsDelegate::CheckMediaAccessPermission: Not supported.
+[14037:14037:0705/152319.285416:ERROR:content/public/browser/web_contents_delegate.cc:310] WebContentsDelegate::CheckMediaAccessPermission: Not supported.
+[14037:14037:0705/152319.285545:ERROR:content/public/browser/web_contents_delegate.cc:310] WebContentsDelegate::CheckMediaAccessPermission: Not supported.
+[14037:14071:0705/152324.681405:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[14037:14037:0705/152327.426829:ERROR:content/public/browser/web_contents_delegate.cc:310] WebContentsDelegate::CheckMediaAccessPermission: Not supported.
+[14037:14037:0705/152327.426913:ERROR:content/public/browser/web_contents_delegate.cc:310] WebContentsDelegate::CheckMediaAccessPermission: Not supported.
+[14037:14037:0705/152409.795199:ERROR:chrome/browser/ui/webui/ntp/new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+[14037:14071:0705/152414.250932:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[14037:14037:0705/152418.172979:ERROR:chrome/browser/ui/webui/ntp/new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+[14037:14037:0705/152420.392609:ERROR:chrome/browser/ui/webui/ntp/new_tab_ui.cc:54] Requested load of chrome://newtab/ for incorrect profile type.
+[14037:14084:0705/152420.479292:ERROR:components/sync/engine/get_updates_processor.cc:270] PostClientToServerMessage() failed during GetUpdates with error Network error (ERR_ABORTED)
+arthur@arthur-Latitude-3540:~$ 
+

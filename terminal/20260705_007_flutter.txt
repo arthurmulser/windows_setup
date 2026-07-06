@@ -1,0 +1,35 @@
+arthur@arthur-Latitude-3540:~/_apps/flutter$ git clone https://github.com/flutter/flutter.git .
+Cloning into '.'...
+remote: Enumerating objects: 1136651, done.
+remote: Counting objects: 100% (401/401), done.
+remote: Compressing objects: 100% (302/302), done.
+remote: Total 1136651 (delta 238), reused 99 (delta 99), pack-reused 1136250 (from 3)
+Receiving objects: 100% (1136651/1136651), 393.98 MiB | 18.50 MiB/s, done.
+Resolving deltas: 100% (815594/815594), done.
+Updating files: 100% (16056/16056), done.
+arthur@arthur-Latitude-3540:~/_apps/flutter$ flutter --version
+Command 'flutter' not found, but can be installed with:
+sudo snap install flutter
+arthur@arthur-Latitude-3540:~/_apps/flutter$ export PATH="$PATH:/home/arthur/_apps/flutter/bin"
+arthur@arthur-Latitude-3540:~/_apps/flutter$ flutter --version
+Downloading Linux x64 Dart SDK from Flutter engine 624198938a598384395d782a1a311547ace02ce1...
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+100 227.4M 100 227.4M   0      0 17.52M      0   00:12   00:12         22.08M
+Building flutter tool...
+Resolving dependencies... 
+Downloading packages... (2.6s)
+Got dependencies.
+Flutter 3.46.0-1.0.pre-419 • channel master • https://github.com/flutter/flutter.git
+Framework • revision cde5f2de55 (2 hours ago) • 2026-07-05 17:53:29 -0400
+Engine • hash 624198938a598384395d782a1a311547ace02ce1 (revision cde5f2de55) (2 hours ago) • 2026-07-05 21:53:29.000Z
+Tools • Dart 3.13.0 (build 3.13.0-272.0.dev) • DevTools 2.59.0
+arthur@arthur-Latitude-3540:~/_apps/flutter$ flutter --version
+Flutter 3.46.0-1.0.pre-419 • channel master • https://github.com/flutter/flutter.git
+Framework • revision cde5f2de55 (2 hours ago) • 2026-07-05 17:53:29 -0400
+Engine • hash 624198938a598384395d782a1a311547ace02ce1 (revision cde5f2de55) (2 hours ago) • 2026-07-05 21:53:29.000Z
+Tools • Dart 3.13.0 (build 3.13.0-272.0.dev) • DevTools 2.59.0
+arthur@arthur-Latitude-3540:~/_apps/flutter$ echo 'export PATH="$PATH:$HOME/_apps/flutter/bin"' >> ~/.bashrc
+source ~/.bashrc
+arthur@arthur-Latitude-3540:~/_apps/flutter$ 
+

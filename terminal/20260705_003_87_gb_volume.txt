@@ -1,0 +1,40 @@
+arthur@arthur-Latitude-3540:~$ sudo lsof +f -- /dev/nvme0n1p7
+[sudo: authenticate] Password:     
+lsof: WARNING: can't stat() fuse.portal file system /run/user/1000/doc
+      Output information may be incomplete.
+lsof: WARNING: can't stat() fuse.gvfsd-fuse file system /run/user/1000/gvfs
+      Output information may be incomplete.
+COMMAND   PID   USER FD   TYPE DEVICE SIZE/OFF NODE NAME
+nautilus 6534 arthur 44r   DIR  259,7     4096    2 /run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b
+arthur@arthur-Latitude-3540:~$ nautilus -q
+** Message: 19:57:46.074: Connecting to org.freedesktop.Tracker3.Miner.Files
+arthur@arthur-Latitude-3540:~$ udisksctl unmount -b /dev/nvme0n1p7
+Unmounted /dev/nvme0n1p7.
+arthur@arthur-Latitude-3540:~$ lsblk -f
+NAME        FSTYPE   FSVER LABEL       UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
+loop0       squashfs 4.0                                                          0   100% /snap/bare/5
+loop1       squashfs 4.0                                                          0   100% /snap/desktop-security-center/150
+loop2       squashfs 4.0                                                          0   100% /snap/core24/1587
+loop3       squashfs 4.0                                                          0   100% /snap/firefox/8107
+loop4       squashfs 4.0                                                          0   100% /snap/gnome-46-2404/153
+loop5       squashfs 4.0                                                          0   100% /snap/firmware-updater/226
+loop6       squashfs 4.0                                                          0   100% /snap/gtk-common-themes/1535
+loop7       squashfs 4.0                                                          0   100% /snap/prompting-client/204
+loop8       squashfs 4.0                                                          0   100% /snap/mesa-2404/1165
+loop9       squashfs 4.0                                                          0   100% /snap/snap-store/1367
+loop10      squashfs 4.0                                                          0   100% /snap/snapd-desktop-integration/361
+loop11      squashfs 4.0                                                          0   100% /snap/snapd/26865
+nvme0n1                                                                                    
+├─nvme0n1p1 vfat     FAT32 ESP         7C65-888D                              75.1M    62% /boot/efi
+├─nvme0n1p2 ext4     1.0               b82660ae-2539-4028-8c91-2909268a62cf  120.5G     7% /
+├─nvme0n1p3 swap     1                 3404dea8-ea68-4109-b58f-0c5f2d885169                [SWAP]
+├─nvme0n1p4 ntfs           WINRETOOLS  9064FEDB64FEC2D0                                    
+├─nvme0n1p5 ntfs           Image       B6A2B892A2B85917                                    
+├─nvme0n1p6 ntfs           DELLSUPPORT 32AECDFAAECDB71F                                    
+└─nvme0n1p7 ext4     1.0               16f35587-adb2-4d60-a70a-d79b1401cf7b   75.6G     0% /run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b
+arthur@arthur-Latitude-3540:~$ ls -ld /run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b
+drwxr-xr-x 3 root root 4096 Jul  5 15:11 /run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b
+arthur@arthur-Latitude-3540:~$ mount | grep nvme0n1p7
+/dev/nvme0n1p7 on /run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b type ext4 (rw,nosuid,nodev,relatime,errors=remount-ro,uhelper=udisks2)
+arthur@arthur-Latitude-3540:~$ sudo chown -R arthur:arthur /run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b
+

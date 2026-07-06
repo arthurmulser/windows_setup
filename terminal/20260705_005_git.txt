@@ -1,0 +1,53 @@
+arthur@arthur-Latitude-3540:~$ git --version
+Command 'git' not found, but can be installed with:
+sudo apt install git
+arthur@arthur-Latitude-3540:~$ sudo apt update
+[sudo: authenticate] Password:     
+Hit:1 http://archive.ubuntu.com/ubuntu resolute InRelease
+Hit:2 https://packages.microsoft.com/repos/code stable InRelease                                            
+Hit:3 https://dl.google.com/linux/chrome-stable/deb stable InRelease                                        
+Hit:4 http://archive.ubuntu.com/ubuntu resolute-updates InRelease   
+Hit:5 http://security.ubuntu.com/ubuntu resolute-security InRelease
+Hit:6 http://archive.ubuntu.com/ubuntu resolute-backports InRelease
+166 packages can be upgraded. Run 'apt list --upgradable' to see them.
+arthur@arthur-Latitude-3540:~$ sudo apt install git -y
+The following package was automatically installed and is no longer required:
+  grub-pc-bin
+Use 'sudo apt autoremove' to remove it.
+
+Installing:
+  git
+
+Installing dependencies:
+  git-man  liberror-perl
+
+Suggested packages:
+  git-doc  git-email  git-gui  gitk  gitweb  git-cvs  git-svn
+
+Summary:
+  Upgrading: 0, Installing: 3, Removing: 0, Not Upgrading: 166
+  Download size: 5,453 kB
+  Space needed: 28.4 MB / 129 GB available
+
+Get:1 http://archive.ubuntu.com/ubuntu resolute/main amd64 liberror-perl all 0.17030-1 [23.5 kB]
+Get:2 http://archive.ubuntu.com/ubuntu resolute/main amd64 git-man all 1:2.53.0-1ubuntu1 [1,202 kB]
+Get:3 http://archive.ubuntu.com/ubuntu resolute/main amd64 git amd64 1:2.53.0-1ubuntu1 [4,227 kB]
+Fetched 5,453 kB in 0s (12.1 MB/s)
+Selecting previously unselected package liberror-perl.
+(Reading database… 159036 files and directories currently installed.)
+Preparing to unpack …/liberror-perl_0.17030-1_all.deb…
+Unpacking liberror-perl (0.17030-1)…
+Selecting previously unselected package git-man.
+Preparing to unpack …/git-man_1%3a2.53.0-1ubuntu1_all.deb…
+Unpacking git-man (1:2.53.0-1ubuntu1)…
+Selecting previously unselected package git.
+Preparing to unpack …/git_1%3a2.53.0-1ubuntu1_amd64.deb…
+Unpacking git (1:2.53.0-1ubuntu1)…
+Setting up liberror-perl (0.17030-1)…
+Setting up git-man (1:2.53.0-1ubuntu1)…
+Setting up git (1:2.53.0-1ubuntu1)…
+Processing triggers for man-db (2.13.1-1build1)…
+arthur@arthur-Latitude-3540:~$ git --version
+git version 2.53.0
+arthur@arthur-Latitude-3540:~$ 
+

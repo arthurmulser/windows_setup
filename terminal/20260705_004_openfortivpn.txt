@@ -1,0 +1,107 @@
+arthur@arthur-Latitude-3540:~$ sudo apt update
+[sudo: authenticate] Password:     
+Hit:1 https://packages.microsoft.com/repos/code stable InRelease
+Hit:2 http://security.ubuntu.com/ubuntu resolute-security InRelease                                        
+Hit:3 https://dl.google.com/linux/chrome-stable/deb stable InRelease                                       
+Hit:4 http://archive.ubuntu.com/ubuntu resolute InRelease
+Hit:5 http://archive.ubuntu.com/ubuntu resolute-updates InRelease
+Hit:6 http://archive.ubuntu.com/ubuntu resolute-backports InRelease
+166 packages can be upgraded. Run 'apt list --upgradable' to see them.
+arthur@arthur-Latitude-3540:~$ sudo apt install openfortivpn
+The following package was automatically installed and is no longer required:
+  grub-pc-bin
+Use 'sudo apt autoremove' to remove it.
+
+Installing:
+  openfortivpn
+
+Summary:
+  Upgrading: 0, Installing: 1, Removing: 0, Not Upgrading: 166
+  Download size: 59.9 kB
+  Space needed: 159 kB / 129 GB available
+
+Get:1 http://archive.ubuntu.com/ubuntu resolute/universe amd64 openfortivpn amd64 1.24.0-2 [59.9 kB]
+Fetched 59.9 kB in 0s (557 kB/s)        
+Selecting previously unselected package openfortivpn.
+(Reading database… 159026 files and directories currently installed.)
+Preparing to unpack …/openfortivpn_1.24.0-2_amd64.deb…
+Unpacking openfortivpn (1.24.0-2)…
+Setting up openfortivpn (1.24.0-2)…
+Processing triggers for man-db (2.13.1-1build1)…
+arthur@arthur-Latitude-3540:~$ sudo openfortivpn 177.107.40.218:20433 -u ti.dolp.arthur
+VPN account password: 
+
+ERROR:  connect: Connection timed out
+INFO:   Closed connection to gateway.
+^C
+arthur@arthur-Latitude-3540:~$ sudo openfortivpn 177.107.40.218:20443 -u ti.dolp.arthur
+VPN account password: 
+ERROR:  Gateway certificate validation failed, and the certificate digest is not in the local whitelist. If you trust it, rerun with:
+ERROR:      --trusted-cert 35a43b39cf5e5704411b536192dbe4a32be911dd6659e8ecc6c75ec98d002f2d
+ERROR:  or add this line to your configuration file:
+ERROR:      trusted-cert = 35a43b39cf5e5704411b536192dbe4a32be911dd6659e8ecc6c75ec98d002f2d
+ERROR:  Gateway certificate:
+ERROR:      subject:
+ERROR:          C=US
+ERROR:          ST=California
+ERROR:          L=Sunnyvale
+ERROR:          O=Fortinet
+ERROR:          OU=FortiGate
+ERROR:          CN=FGT80FTK23046342
+ERROR:          emailAddress=support@fortinet.com
+ERROR:      issuer:
+ERROR:          C=US
+ERROR:          ST=California
+ERROR:          L=Sunnyvale
+ERROR:          O=Fortinet
+ERROR:          OU=Certificate Authority
+ERROR:          CN=fortinet-subca2001
+ERROR:          emailAddress=support@fortinet.com
+ERROR:      sha256 digest:
+ERROR:          35a43b39cf5e5704411b536192dbe4a32be911dd6659e8ecc6c75ec98d002f2d
+INFO:   Closed connection to gateway.
+ERROR:  Gateway certificate validation failed, and the certificate digest is not in the local whitelist. If you trust it, rerun with:
+ERROR:      --trusted-cert 35a43b39cf5e5704411b536192dbe4a32be911dd6659e8ecc6c75ec98d002f2d
+ERROR:  or add this line to your configuration file:
+ERROR:      trusted-cert = 35a43b39cf5e5704411b536192dbe4a32be911dd6659e8ecc6c75ec98d002f2d
+ERROR:  Gateway certificate:
+ERROR:      subject:
+ERROR:          C=US
+ERROR:          ST=California
+ERROR:          L=Sunnyvale
+ERROR:          O=Fortinet
+ERROR:          OU=FortiGate
+ERROR:          CN=FGT80FTK23046342
+ERROR:          emailAddress=support@fortinet.com
+ERROR:      issuer:
+ERROR:          C=US
+ERROR:          ST=California
+ERROR:          L=Sunnyvale
+ERROR:          O=Fortinet
+ERROR:          OU=Certificate Authority
+ERROR:          CN=fortinet-subca2001
+ERROR:          emailAddress=support@fortinet.com
+ERROR:      sha256 digest:
+ERROR:          35a43b39cf5e5704411b536192dbe4a32be911dd6659e8ecc6c75ec98d002f2d
+INFO:   Could not log out.
+arthur@arthur-Latitude-3540:~$ sudo openfortivpn 177.107.40.218:20443 \
+  -u ti.dolp.arthur \
+  --trusted-cert 35a43b39cf5e5704411b536192dbe4a32be911dd6659e8ecc6c75ec98d002f2d
+VPN account password: 
+INFO:   Connected to gateway.
+INFO:   Authenticated.
+INFO:   Remote gateway has allocated a VPN.
+Using interface ppp0
+Connect: ppp0 <--> /dev/pts/4
+INFO:   Got addresses: [10.100.223.100], ns [10.100.101.10, 1.1.1.1]
+INFO:   Negotiation complete.
+local  IP address 10.100.223.100
+remote IP address 177.107.40.218
+INFO:   Interface ppp0 is UP.
+WARN:   Removing wrong route to vpn server...
+INFO:   Setting new routes...
+INFO:   Adding VPN nameservers...
+Dropped protocol specifier '.openfortivpn' from 'ppp0.openfortivpn'. Using 'ppp0' (ifindex=4).
+INFO:   Tunnel is up and running.
+
+
