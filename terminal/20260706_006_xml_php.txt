@@ -1,0 +1,54 @@
+arthur@arthur-Latitude-3540:~$ sudo apt update
+[sudo: authenticate] Password:     
+Hit:1 http://archive.ubuntu.com/ubuntu resolute InRelease
+Hit:2 https://deb.nodesource.com/node_24.x nodistro InRelease                                                              
+Hit:3 http://security.ubuntu.com/ubuntu resolute-security InRelease                                                        
+Hit:4 https://packages.microsoft.com/repos/code stable InRelease                                                           
+Hit:5 http://archive.ubuntu.com/ubuntu resolute-updates InRelease                                    
+Hit:6 http://archive.ubuntu.com/ubuntu resolute-backports InRelease
+Hit:7 https://dl.google.com/linux/chrome-stable/deb stable InRelease
+3 packages can be upgraded. Run 'apt list --upgradable' to see them.
+arthur@arthur-Latitude-3540:~$ sudo apt install php-xml
+The following package was automatically installed and is no longer required:
+  grub-pc-bin
+Use 'sudo apt autoremove' to remove it.
+
+Installing:
+  php-xml
+
+Installing dependencies:
+  php8.5-xml
+
+Summary:
+  Upgrading: 0, Installing: 2, Removing: 0, Not Upgrading: 3
+  Download size: 214 kB
+  Space needed: 791 kB / 94.0 GB available
+
+Continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 php8.5-xml amd64 8.5.4-0ubuntu1.1 [212 kB]
+Get:2 http://archive.ubuntu.com/ubuntu resolute/main amd64 php-xml all 2:8.5+99ubuntu1 [1,856 B]
+Fetched 214 kB in 0s (1,087 kB/s)   
+Selecting previously unselected package php8.5-xml.
+(Reading database… 221959 files and directories currently installed.)
+Preparing to unpack …/php8.5-xml_8.5.4-0ubuntu1.1_amd64.deb…
+Unpacking php8.5-xml (8.5.4-0ubuntu1.1)…
+Selecting previously unselected package php-xml.
+Preparing to unpack …/php-xml_2%3a8.5+99ubuntu1_all.deb…
+Unpacking php-xml (2:8.5+99ubuntu1)…
+Setting up php8.5-xml (8.5.4-0ubuntu1.1)…
+Creating config file /etc/php/8.5/mods-available/dom.ini with new version
+Creating config file /etc/php/8.5/mods-available/simplexml.ini with new version
+Creating config file /etc/php/8.5/mods-available/xml.ini with new version
+Creating config file /etc/php/8.5/mods-available/xmlreader.ini with new version
+Creating config file /etc/php/8.5/mods-available/xmlwriter.ini with new version
+Creating config file /etc/php/8.5/mods-available/xsl.ini with new version
+Setting up php-xml (2:8.5+99ubuntu1)…
+Processing triggers for php8.5-cli (8.5.4-0ubuntu1.1)…
+arthur@arthur-Latitude-3540:~$ php -m | grep -E "dom|xml"
+dom
+libxml
+random
+xml
+xmlreader
+xmlwriter
+arthur@arthur-Latitude-3540:~$ 
