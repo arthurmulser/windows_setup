@@ -1,10 +1,8 @@
 #!/bin/bash
 
 # ==============================================================================;
-# como usar:;
-# 1. garanta permissão de execução (uma única vez): chmod +x connect_vpn_dolp.sh;
-
-# 2. execute: sudo ./connect_vpn_dolp.sh;
+# garanta permissão de execução (uma única vez): chmod +x connect_vpn_dolp.sh;
+# execute: sudo ./connect_vpn_dolp.sh;
 # ==============================================================================;
 
 sudo openfortivpn \

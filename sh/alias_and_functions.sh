@@ -1,9 +1,11 @@
 #!/bin/bash
 
+# ==============================================================================;
 # este arquivo é referenciado em: ~/.bashrc;
 # após alterá-lo, execute no terminal: source ~/.bashrc;
 # para testar se foi carregado corretamente, execute: type gc3;
 # retorno esperado: gc3 is a function;
+# ==============================================================================;
 
 ### ### ### docker;
 

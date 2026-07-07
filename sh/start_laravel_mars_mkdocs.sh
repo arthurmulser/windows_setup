@@ -1,10 +1,8 @@
 #!/bin/bash
 
 # ==============================================================================;
-# como usar:;
-# 1. torne o script executável: chmod +x sh/start_laravel_mars_mkdocs.sh;
-#
-# 2. execute de qualquer pasta do sistema: ./sh/start_laravel_mars_mkdocs.sh;
+# torne o script executável: chmod +x sh/start_laravel_mars_mkdocs.sh;
+# execute de qualquer pasta do sistema: ./sh/start_laravel_mars_mkdocs.sh;
 # ==============================================================================;
 
 # define o caminho absoluto da pasta do projeto;
