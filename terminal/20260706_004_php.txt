@@ -1,0 +1,110 @@
+arthur@arthur-Latitude-3540:~$ sudo apt update
+[sudo: authenticate] Password:     
+Get:1 http://security.ubuntu.com/ubuntu resolute-security InRelease [137 kB]
+Hit:2 https://packages.microsoft.com/repos/code stable InRelease                                                          
+Get:3 https://dl.google.com/linux/chrome-stable/deb stable InRelease [1,825 B]                                            
+Hit:4 https://deb.nodesource.com/node_24.x nodistro InRelease                                                     
+Hit:5 http://archive.ubuntu.com/ubuntu resolute InRelease                     
+Get:6 http://security.ubuntu.com/ubuntu resolute-security/main amd64 c-n-f Metadata [4,616 B]
+Get:7 https://dl.google.com/linux/chrome-stable/deb stable/main amd64 Packages [1,212 B]
+Get:8 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 c-n-f Metadata [3,552 B]
+Get:9 http://archive.ubuntu.com/ubuntu resolute-updates InRelease [137 kB]
+Hit:10 http://archive.ubuntu.com/ubuntu resolute-backports InRelease
+Get:11 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 Packages [308 kB]
+Get:12 http://archive.ubuntu.com/ubuntu resolute-updates/main Translation-en [81.4 kB]
+Fetched 675 kB in 1s (538 kB/s)                                   
+3 packages can be upgraded. Run 'apt list --upgradable' to see them.
+arthur@arthur-Latitude-3540:~$ sudo apt install php-cli
+The following package was automatically installed and is no longer required:
+  grub-pc-bin
+Use 'sudo apt autoremove' to remove it.
+
+Installing:
+  php-cli
+
+Installing dependencies:
+  libargon2-1  libsodium23  php-common  php8.5-cli  php8.5-common  php8.5-readline
+
+Suggested packages:
+  php-pear
+
+Summary:
+  Upgrading: 0, Installing: 7, Removing: 0, Not Upgrading: 3
+  Download size: 4,168 kB
+  Space needed: 25.0 MB / 94.1 GB available
+
+Continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu resolute/main amd64 libargon2-1 amd64 0~20190702+dfsg-5 [21.3 kB]
+Get:2 http://archive.ubuntu.com/ubuntu resolute/main amd64 libsodium23 amd64 1.0.18-2 [165 kB]
+Get:3 http://archive.ubuntu.com/ubuntu resolute/main amd64 php-common all 2:99ubuntu1 [13.9 kB]
+Get:4 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 php8.5-common amd64 8.5.4-0ubuntu1.1 [815 kB]
+Get:5 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 php8.5-readline amd64 8.5.4-0ubuntu1.1 [13.9 kB]
+Get:6 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 php8.5-cli amd64 8.5.4-0ubuntu1.1 [3,134 kB]
+Get:7 http://archive.ubuntu.com/ubuntu resolute/main amd64 php-cli all 2:8.5+99ubuntu1 [4,662 B]
+Fetched 4,168 kB in 0s (8,916 kB/s)
+Selecting previously unselected package libargon2-1:amd64.
+(Reading database… 220759 files and directories currently installed.)
+Preparing to unpack …/0-libargon2-1_0~20190702+dfsg-5_amd64.deb…
+Unpacking libargon2-1:amd64 (0~20190702+dfsg-5)…
+Selecting previously unselected package libsodium23:amd64.
+Preparing to unpack …/1-libsodium23_1.0.18-2_amd64.deb…
+Unpacking libsodium23:amd64 (1.0.18-2)…
+Selecting previously unselected package php-common.
+Preparing to unpack …/2-php-common_2%3a99ubuntu1_all.deb…
+Unpacking php-common (2:99ubuntu1)…
+Selecting previously unselected package php8.5-common.
+Preparing to unpack …/3-php8.5-common_8.5.4-0ubuntu1.1_amd64.deb…
+Unpacking php8.5-common (8.5.4-0ubuntu1.1)…
+Selecting previously unselected package php8.5-readline.
+Preparing to unpack …/4-php8.5-readline_8.5.4-0ubuntu1.1_amd64.deb…
+Unpacking php8.5-readline (8.5.4-0ubuntu1.1)…
+Selecting previously unselected package php8.5-cli.
+Preparing to unpack …/5-php8.5-cli_8.5.4-0ubuntu1.1_amd64.deb…
+Unpacking php8.5-cli (8.5.4-0ubuntu1.1)…
+Selecting previously unselected package php-cli.
+Preparing to unpack …/6-php-cli_2%3a8.5+99ubuntu1_all.deb…
+Unpacking php-cli (2:8.5+99ubuntu1)…
+Setting up php-common (2:99ubuntu1)…
+Created symlink '/etc/systemd/system/timers.target.wants/phpsessionclean.timer' → '/usr/lib/systemd/system/phpsessionclean.timer'.
+Setting up libsodium23:amd64 (1.0.18-2)…
+Setting up libargon2-1:amd64 (0~20190702+dfsg-5)…
+Setting up php8.5-common (8.5.4-0ubuntu1.1)…
+Creating config file /etc/php/8.5/mods-available/calendar.ini with new version
+Creating config file /etc/php/8.5/mods-available/ctype.ini with new version
+Creating config file /etc/php/8.5/mods-available/exif.ini with new version
+Creating config file /etc/php/8.5/mods-available/fileinfo.ini with new version
+Creating config file /etc/php/8.5/mods-available/ffi.ini with new version
+Creating config file /etc/php/8.5/mods-available/ftp.ini with new version
+Creating config file /etc/php/8.5/mods-available/gettext.ini with new version
+Creating config file /etc/php/8.5/mods-available/iconv.ini with new version
+Creating config file /etc/php/8.5/mods-available/pdo.ini with new version
+Creating config file /etc/php/8.5/mods-available/phar.ini with new version
+Creating config file /etc/php/8.5/mods-available/posix.ini with new version
+Creating config file /etc/php/8.5/mods-available/shmop.ini with new version
+Creating config file /etc/php/8.5/mods-available/sockets.ini with new version
+Creating config file /etc/php/8.5/mods-available/sysvmsg.ini with new version
+Creating config file /etc/php/8.5/mods-available/sysvsem.ini with new version
+Creating config file /etc/php/8.5/mods-available/sysvshm.ini with new version
+Creating config file /etc/php/8.5/mods-available/tokenizer.ini with new version
+Setting up php8.5-readline (8.5.4-0ubuntu1.1)…
+Creating config file /etc/php/8.5/mods-available/readline.ini with new version
+Setting up php8.5-cli (8.5.4-0ubuntu1.1)…
+update-alternatives: using /usr/bin/php8.5 to provide /usr/bin/php (php) in auto mode
+update-alternatives: using /usr/bin/phar8.5 to provide /usr/bin/phar (phar) in auto mode
+update-alternatives: using /usr/bin/phar.phar8.5 to provide /usr/bin/phar.phar (phar.phar) in auto mode
+Creating config file /etc/php/8.5/cli/php.ini with new version
+Setting up php-cli (2:8.5+99ubuntu1)…
+update-alternatives: using /usr/bin/php.default to provide /usr/bin/php (php) in auto mode
+update-alternatives: using /usr/bin/phar.default to provide /usr/bin/phar (phar) in auto mode
+update-alternatives: using /usr/bin/phar.phar.default to provide /usr/bin/phar.phar (phar.phar) in auto mode
+Processing triggers for man-db (2.13.1-1build1)…
+Processing triggers for libc-bin (2.43-2ubuntu2)…
+Processing triggers for php8.5-cli (8.5.4-0ubuntu1.1)…
+arthur@arthur-Latitude-3540:~$ php -v
+PHP 8.5.4 (cli) (built: May 25 2026 12:19:37) (NTS)
+Copyright (c) The PHP Group
+Built by Ubuntu
+Zend Engine v4.5.4, Copyright (c) Zend Technologies
+    with Zend OPcache v8.5.4, Copyright (c), by Zend Technologies
+arthur@arthur-Latitude-3540:~$ 
+
