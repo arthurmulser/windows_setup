@@ -2,7 +2,7 @@
 
 # ==============================================================================;
 # torne o script executável: chmod +x sh/start_laravel_mars_mkdocs.sh;
-# execute de qualquer pasta do sistema: ./sh/start_laravel_mars_mkdocs.sh;
+# execute de windows_setup: ./sh/start_laravel_mars_mkdocs.sh;
 # ==============================================================================;
 
 # define o caminho absoluto da pasta do projeto;
