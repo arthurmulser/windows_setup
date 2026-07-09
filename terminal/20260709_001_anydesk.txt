@@ -1,0 +1,29 @@
+arthur@arthur-Latitude-3540:~/Downloads$ sudo apt install ./anydesk*.deb
+[sudo: authenticate] Password:     
+Note, selecting 'anydesk' instead of './anydesk_8.0.4-1_amd64.deb'
+The following package was automatically installed and is no longer required:
+  grub-pc-bin
+Use 'sudo apt autoremove' to remove it.
+
+Installing:
+  anydesk
+
+Summary:
+  Upgrading: 0, Installing: 1, Removing: 0, Not Upgrading: 18
+  Download size: 0 B / 16.1 MB
+  Space needed: 42.9 MB / 86.6 GB available
+
+Get:1 /home/arthur/Downloads/anydesk_8.0.4-1_amd64.deb anydesk amd64 8.0.4 [16.1 MB]
+Selecting previously unselected package anydesk.
+(Reading database… 221997 files and directories currently installed.)
+Preparing to unpack …/anydesk_8.0.4-1_amd64.deb…
+Failed to stop anydesk.service: Unit anydesk.service not loaded.
+Unpacking anydesk (8.0.4)…
+Setting up anydesk (8.0.4)…
+Created symlink '/etc/systemd/system/multi-user.target.wants/anydesk.service' → 
+'/etc/systemd/system/anydesk.service'.
+Processing triggers for hicolor-icon-theme (0.18-2build1)…
+Processing triggers for gnome-menus (3.38.1-1ubuntu1)…
+Processing triggers for desktop-file-utils (0.28-1build1)…
+Notice: Download is performed unsandboxed as root as file '/home/arthur/Downloads/anydesk_8.0.4-1_amd64.deb' couldn't be accessed by user '_apt'. - pkgAcquire::Run (13: Permission denied)
+arthur@arthur-Latitude-3540:~/Downloads$ 
