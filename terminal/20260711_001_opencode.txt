@@ -1,0 +1,27 @@
+arthur@arthur-Latitude-3540:~/Downloads$ curl -fsSL https://opencode.ai/install | bash
+
+Installing opencode version: 1.17.18
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 100%
+Successfully added opencode to $PATH in /home/arthur/.bashrc
+
+                                 ▄     
+█▀▀█ █▀▀█ █▀▀█ █▀▀▄ █▀▀▀ █▀▀█ █▀▀█ █▀▀█
+█░░█ █░░█ █▀▀▀ █░░█ █░░░ █░░█ █░░█ █▀▀▀
+▀▀▀▀ █▀▀▀ ▀▀▀▀ ▀  ▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀▀
+
+
+OpenCode includes free models, to start:
+
+cd <project>  # Open directory
+opencode      # Run command
+
+For more information visit https://opencode.ai/docs
+
+
+arthur@arthur-Latitude-3540:~/Downloads$ opencode --version
+Command 'opencode' not found, but can be installed with:
+sudo snap install opencode
+arthur@arthur-Latitude-3540:~/Downloads$ source ~/.bashrc
+arthur@arthur-Latitude-3540:~/Downloads$ opencode --version
+1.17.18
+arthur@arthur-Latitude-3540:~/Downloads$
