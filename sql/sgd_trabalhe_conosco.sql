@@ -1,0 +1,1 @@
+-- blank_form21_site_descricao_vaga; // tela onde aparece o card da vaga com cargo, descrição, requisitos e benefícios;
