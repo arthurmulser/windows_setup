@@ -22,3 +22,19 @@ WHERE (id_ped_deslig = 1930)
 --  8 | ESPERA DE CHECKLIST       |      7       |     7
 --  9 | PARECER GESTOR IMEDIATO   |     10       |     2
 -- 10 | PARECER GESTOR UNIDADE    |      2       |     3
+
+-- =============================================================================
+-- Tabela de Acessos (Central de Desligamento)
+-- =============================================================================
+--
+-- ID Grupo | Acesso
+-- ---------+---------------------------------------
+--       84 | RH - GESTOR IMEDIATO
+--      103 | DP - DESLIGAMENTO - DP- UNIDADE
+--      104 | DP - DESLIGAMENTO - SEDE
+--      105 | RH - DESLIGAMENTO - GESTOR DE UNIDADE
+--      141 | DIRETORIA
+--      153 | DP - GESTOR DO DEPARTAMENTO
+--      158 | DP - BONIFICACAO SGI ADM
+--      159 | DP - BONIFICACAO SGI OP
+--      175 | RH - DESLIGAMENTO - UNIDADE
