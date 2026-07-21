@@ -1,0 +1,82 @@
+arthur@arthur-Latitude-3540:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           3.0G  3.4M  3.0G   1% /run
+/dev/nvme0n1p2  137G   54G   77G  42% /
+tmpfs           7.5G  274M  7.2G   4% /dev/shm
+efivarfs        438K  266K  168K  62% /sys/firmware/efi/efivars
+none            1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+none            1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+tmpfs           7.5G   69M  7.4G   1% /tmp
+/dev/nvme0n1p1  196M  121M   76M  62% /boot/efi
+tmpfs           1.5G  104K  1.5G   1% /run/user/1000
+/dev/nvme0n1p7   80G  1.4G   75G   2% /run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b
+arthur@arthur-Latitude-3540:~$ ls
+Android  Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos  _apps  snap
+arthur@arthur-Latitude-3540:~$ du -sh * | sort -h
+4.0K	Documents
+4.0K	Music
+4.0K	Public
+4.0K	Templates
+8.0K	Videos
+840K	Downloads
+3.8M	Pictures
+223M	Desktop
+1.7G	_apps
+2.1G	snap
+13G	Android
+arthur@arthur-Latitude-3540:~$ cd ..
+arthur@arthur-Latitude-3540:/home$ du -sh * | sort -h
+39G	arthur
+arthur@arthur-Latitude-3540:/home$ journalctl --disk-usage
+Archived and active journals take up 138.5M in the file system.
+arthur@arthur-Latitude-3540:/home$ sudo apt autoremove --purge -y
+[sudo: authenticate] Password:     
+Summary:                        
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 70
+arthur@arthur-Latitude-3540:/home$ sudo apt clean
+arthur@arthur-Latitude-3540:/home$ sudo apt autoclean
+arthur@arthur-Latitude-3540:/home$ sudo journalctl --vacuum-time=7d
+Deleted archived journal /var/log/journal/494bb45cc029404892def6df9d40e218/system@174a2eff15604229830a37331cdb4fd2-0000000000000001-000655e130ac446c.journal (58.4M).
+Deleted archived journal /var/log/journal/494bb45cc029404892def6df9d40e218/user-1000@0006572552cfb05c-5498756a0f447aa6.journal~ (40M).
+Vacuuming done, freed 98.4M of archived journals from /var/log/journal/494bb45cc029404892def6df9d40e218.
+Vacuuming done, freed 0B of archived journals from /var/log/journal.
+Vacuuming done, freed 0B of archived journals from /run/log/journal.
+arthur@arthur-Latitude-3540:/home$ sudo journalctl --vacuum-size=100M
+Vacuuming done, freed 0B of archived journals from /var/log/journal/494bb45cc029404892def6df9d40e218.
+Vacuuming done, freed 0B of archived journals from /run/log/journal.
+Vacuuming done, freed 0B of archived journals from /var/log/journal.
+arthur@arthur-Latitude-3540:/home$ sudo snap set system refresh.retain=2
+arthur@arthur-Latitude-3540:/home$ snap list --all | awk '/disabled/{print $1, $3}' | while read snapname revision; do sudo snap remove "$snapname" --revision="$revision"; done
+android-studio (revision 232) removed
+core24 (revision 1587) removed
+desktop-security-center (revision 150) removed
+gnome-46-2404 (revision 153) removed
+mesa-2404 (revision 1165) removed
+prompting-client (revision 204) removed
+snapd (revision 26865) removed
+snapd-desktop-integration (revision 387) removed
+arthur@arthur-Latitude-3540:/home$ rm -rf ~/.cache/thumbnails/*
+arthur@arthur-Latitude-3540:/home$ docker system prune -f
+Command 'docker' not found, but can be installed with:
+sudo snap install docker         # version 29.3.1, or
+sudo apt  install docker.io      # version 29.1.3-0ubuntu4.1
+sudo apt  install podman-docker  # version 5.7.0+ds2-3build1
+See 'snap info docker' for additional versions.
+arthur@arthur-Latitude-3540:/home$ flutter clean
+
+┌─────────────────────────────────────────────────────────┐
+│ A new version of Flutter is available!                  │
+│                                                         │
+│ To update to the latest version, run "flutter upgrade". │
+└─────────────────────────────────────────────────────────┘
+Error: No pubspec.yaml file found.
+This command should be run from the root of your Flutter project.
+arthur@arthur-Latitude-3540:/home$ npm cache clean --force
+npm warn using --force Recommended protections disabled.
+arthur@arthur-Latitude-3540:/home$ composer clear-cache
+Cache directory does not exist (cache-vcs-dir): 
+Clearing cache (cache-repo-dir): /home/arthur/.cache/composer/repo
+Clearing cache (cache-files-dir): /home/arthur/.cache/composer/files
+Clearing cache (cache-dir): /home/arthur/.cache/composer
+All caches cleared.
+arthur@arthur-Latitude-3540:/home$
