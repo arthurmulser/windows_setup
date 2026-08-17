@@ -18,6 +18,22 @@ where idtb_produtos_enel_rastro = 33594
 select * from tb_produtos_enel_rastro_check
 where idtb_produtos_enel_rastro = 33594
 ;
+
+SELECT 
+    a.idtb_produtos_enel_manifesto
+FROM
+    tb_produtos_enel_manifesto_itens AS a
+        INNER JOIN
+    tb_produtos_enel_manifesto AS b ON b.idtb_produtos_enel_manifesto = a.idtb_produtos_enel_manifesto
+WHERE
+    a.idtb_produtos_enel_manifesto_itens IN (SELECT 
+            idtb_produtos_enel_manifesto_itens
+        FROM
+            tb_produtos_enel_rastro_check
+        WHERE
+            idtb_produtos_enel_rastro = 33594)
+        AND b.id_aceite = 1
+;
  
 select * from tb_produtos_enel_manifesto_itens 
 where idtb_produtos_enel_manifesto_itens in ('765025', '765026', '951542', '979460')
