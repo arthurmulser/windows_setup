@@ -1,0 +1,212 @@
+
+  ███╗   ██╗██╗████████╗ ██████╗ ███████╗███╗   ██╗
+  ████╗  ██║██║╚══██╔══╝██╔════╝ ██╔════╝████╗  ██║
+  ██╔██╗ ██║██║   ██║   ██║  ███╗█████╗  ██╔██╗ ██║
+  ██║╚██╗██║██║   ██║   ██║   ██║██╔══╝  ██║╚██╗██║
+  ██║ ╚████║██║   ██║   ╚██████╔╝███████╗██║ ╚████║
+  ╚═╝  ╚═══╝╚═╝   ╚═╝    ╚═════╝ ╚══════╝╚═╝  ╚═══╝
+
+  NITGEN Fingerprint - Instalador Automatizado v3.0
+  --------------------------------------------------
+  Empresa: Fingertech (Responsável pelo script)
+  Autores: Leandro Ostruka e Guilherme Rissi
+  GitHub:  https://github.com/Leostruka
+  GitHub:  https://github.com/glrmrissi
+  --------------------------------------------------
+  Kernel:          7.0.0-29-generic
+  Log:             /tmp/nitgen_install_20260817_095314.log
+  Data/Hora:       17/08/2026 09:53:14
+
+
+--- Verificações Iniciais ---
+[OK] Privilégios root verificados
+[INFO] Distro: Ubuntu 26.04
+[INFO] Kernel: 7.0.0-29-generic
+
+--- Confirmação ---
+
+[WARN] Este script irá instalar dependências e módulos do kernel no sistema. Continuar?
+
+--- Instalando Dependências ---
+[INFO] Gerenciador: APT
+    [OK] apt-get update
+    [OK] Instalando pacotes (APT)
+    [OK] Instalando unzip
+[OK] Dependências instaladas
+
+--- Verificação de Kernel e Compilador ---
+[INFO] Verificando headers em /lib/modules/7.0.0-29-generic/build...
+[OK] Headers encontrados
+[INFO] Detectando compilador do kernel...
+[INFO] Kernel compilado com GCC
+[OK] GCC: gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+
+--- Reconhecimento de Kernel e Pacotes ---
+
+  [ Kernel ]
+  Versão:               7.0.0-29-generic
+  Tipo:                  Linux
+  Sabor:                 Generic
+  Compilado com:         GCC
+  Preemption:            NONE (throughput)
+
+  [ Headers do Kernel ]
+  [OK] Build dir:   /lib/modules/7.0.0-29-generic/build
+    Source dir:  ausente (não obrigatório)
+
+  [ Módulos USB/Biometria já carregados ]
+  - usb_storage            86016  2 uas
+  - usbhid                 86016  0
+  - hid                   282624  7 i2c_hid,usbhid,hid_multitouch,hid_sensor_hub,snd_soc_sdca,intel_ishtp_hid,hid_generic
+
+  [ Pacotes de Build ]
+  [OK] gcc      15.2.0      [OK] clang    21.1.8      [OK] make     4.4.1       
+  [OK] ld       2.46        [OK] modprobe 34.2        [OK] depmod   34.2        
+  [OK] dkms     3.2.2       [OK] git      2.53.0      [OK] curl     8.18.0      
+  [OK] wget     1.25.0      [OK] unzip    ok          [OK] tar      1.35        
+  
+
+  [ Pacote de Headers (gerenciador) ]
+  [OK] linux-headers-7.0.0-29-generic 7.0.0-29.29
+  [OK] linux-headers-generic-hwe-26.04 7.0.0-29.29
+
+  [ DKMS ]
+  [OK] DKMS disponível: dkms-3.2.2
+    Nenhum módulo NITGEN registrado no DKMS.
+
+
+--- Detecção de Dispositivo USB NITGEN ---
+  Escaneando dispositivos USB NITGEN...
+
+[WARN] Nenhum dispositivo NITGEN reconhecido pelos IDs conhecidos.
+
+    Nenhum dispositivo USB NITGEN conectado no momento.
+    O script continuará com a instalação dos drivers de qualquer forma.
+
+  Status dos módulos no kernel:
+    VenusDrv: não carregado
+    ngstardrv: não carregado
+  [OK] usbhid  (size: 86016, used: 0)
+
+  Regras udev NITGEN existentes:
+  - /lib/udev/rules.d/40-usb_modeswitch.rules
+
+
+--- Conectividade ---
+[INFO] Verificando conexão com a internet...
+    [OK] Ping github.com
+[OK] Conexão OK (github.com)
+[INFO] Obtendo links de configuração...
+    [OK] Resolvendo URL do config remoto
+
+  --- Download: configurações remotas ---
+  Arquivo:  remote_links.txt
+
+  [########################################] 100%  
+  [OK] configurações remotas baixado com sucesso
+  Tamanho real:    0.3 KB
+  MD5:             c289fa8900dbc6aadf29f221879ca5a7
+
+[OK] Links carregados de: /tmp/remote_links.txt
+
+--- Iniciando Instalação ---
+[INFO] Arquitetura: x86_64
+[INFO] Verificando ambiente...
+[INFO] Downloads serão feitos da internet.
+
+--- Download dos Drivers ---
+    [OK] Resolvendo link Ngstar
+
+  --- Download: Driver Ngstar (HFDU06 / FDU06M / FDU06S) ---
+  Arquivo:  ngstardrv.tar.zip
+
+  [########################################] 100%  
+  [OK] Driver Ngstar (HFDU06 / FDU06M / FDU06S) baixado com sucesso
+  Tamanho real:    436.3 KB
+  MD5:             8cf423c66b00c398c8c275c07d1c517e
+
+    [OK] Resolvendo link Venus
+
+  --- Download: Driver Venus (FDU06) ---
+  Arquivo:  venus-linux-driver-main.zip
+
+  [########################################] 100%  
+  [OK] Driver Venus (FDU06) baixado com sucesso
+  Tamanho real:    3.9 MB
+  MD5:             e14c5668dfe5d9ea765b5fb608d711c2
+
+    [OK] Resolvendo link SDK
+
+  --- Download: eNBioBSP SDK v5.3.0.1 ---
+  Arquivo:  eNBioBSP-SDK-linux-v5.3.0.1.zip
+
+  [########################################] 100%  
+  [OK] eNBioBSP SDK v5.3.0.1 baixado com sucesso
+  Tamanho real:    8.1 MB
+  MD5:             37052875452106fbfe6fdbf0ed0f6a9e
+
+  [OK] Downloads concluídos - 3 baixados, 0 já existentes.
+
+
+--- Extraindo Arquivos ---
+    [OK] Extraindo eNBioBSP-SDK-linux-v5.3.0.1.zip
+    [OK] Extraindo ngstardrv.tar.zip
+    [OK] Extraindo venus-linux-driver-main.zip
+    [OK] Extraindo ngstardrv-64bit.tar.gz (x86_64)
+[OK] Extração concluída
+
+--- Instalando Driver Ngstar (HFDU06/FDU06M/S) ---
+[INFO] Compilando driver Ngstar...
+    [OK] Instalando driver Ngstar
+[OK] Driver Ngstar instalado
+
+--- Instalando Driver Venus (FDU06) ---
+[INFO] Compilando driver Venus...
+    [OK] make clean (Venus)
+    [OK] Compilando driver Venus
+    [OK] Instalando driver Venus
+[OK] Driver Venus instalado
+
+--- Instalando SDK NITGEN ---
+    [OK] Instalando SDK NITGEN
+[OK] SDK instalado em /usr/local/NITGEN/
+[OK] Instalação Venus/Ngstar concluída
+[OK] Operação Venus/Ngstar concluída
+[INFO] Secure Boot não está ativado - assinatura de módulos não é obrigatória.
+
+--- Configurando autoload no boot ---
+[OK] Autoload configurado em /etc/modules-load.d/nitgen.conf
+
+--- Carregando módulos no kernel ---
+[WARN] Falha ao carregar módulo VenusDrv
+[WARN] Falha ao carregar módulo ngstardrv
+[WARN] modprobe falhou. Tentando insmod direto...
+[WARN] insmod VenusDrv.ko falhou
+[WARN]   detalhe: insmod: ERROR: could not insert module /lib/modules/7.0.0-29-generic/kernel/drivers/usb/misc/VenusDrv.ko: File exists
+[WARN] insmod ngstardrv.ko falhou
+[WARN]   detalhe: insmod: ERROR: could not insert module /lib/modules/7.0.0-29-generic/kernel/drivers/usb/misc/ngstardrv.ko: File exists
+[INFO] Recarregando regras udev...
+[OK] Regras udev recarregadas
+
+--- Verificando instalação ---
+[WARN] Módulo VenusDrv carregado - NÃO encontrado
+[WARN] Módulo ngstardrv carregado - NÃO encontrado
+[OK] VenusDrv.ko em /lib/modules/7.0.0-29-generic/kernel/drivers/usb/misc
+[OK] ngstardrv.ko em /lib/modules/7.0.0-29-generic/kernel/drivers/usb/misc
+[OK] VenusDrv.h em /usr/include/linux
+[OK] ngstardrv.h em /usr/include/linux
+[OK] VenusLib.so em /lib
+[OK] ngstarlib.so em /lib
+[OK] Regra udev Nitgen-VenusDrv
+
+Resultado: 7 OK / 2 avisos
+
+
+
+  --------------------------------------------------
+    Script finalizado com sucesso.
+  --------------------------------------------------
+
+  Log completo:    /tmp/nitgen_install_20260817_095314.log
+
+arthur@arthur-Latitude-3540:~/Downloads$
