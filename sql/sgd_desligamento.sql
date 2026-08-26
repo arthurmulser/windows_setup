@@ -39,4 +39,5 @@ WHERE (id_ped_deslig = 1930)
 --      159 | DP - BONIFICACAO SGI OP
 --      175 | RH - DESLIGAMENTO - UNIDADE
 
--- grid_rh_ped_deslig_gestor_imediato; // grid de acesso ao gestor imediato;
+-- grid_rh_ped_deslig_gestor_imediato; // grid de acesso do gestor imediato;
+-- grid_rh_ped_deslig_sgi; // grid de acesso do validador sgi;
