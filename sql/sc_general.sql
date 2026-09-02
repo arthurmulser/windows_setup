@@ -1,3 +1,5 @@
+11:12:37	ALTER TABLE flutter_log   ADD COLUMN status_code INT NULL AFTER api_version,   ADD INDEX flutter_log_status_code_dt_evento_index (status_code, dt_evento)	0 row(s) affected Records: 0  Duplicates: 0  Warnings: 0	0.298 sec
+
 14:43:53	ALTER TABLE flutter_log  DROP FOREIGN KEY flutter_log_idflutter_log_token_foreign	0 row(s) affected Records: 0  Duplicates: 0  Warnings: 0	0.285 sec
 
 22:09:50	ALTER TABLE `flutter_log`  ADD CONSTRAINT `flutter_log_idflutter_log_token_foreign`  FOREIGN KEY (`idflutter_log_token`) REFERENCES `flutter_log` (`idflutter_log`)  ON DELETE RESTRICT	361 row(s) affected Records: 361  Duplicates: 0  Warnings: 0	0.272 sec
