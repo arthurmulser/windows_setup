@@ -1,0 +1,4 @@
+arthur@arthur-Latitude-3540:~/Downloads$ sudo snap install opera
+[sudo: authenticate] Password:     
+opera 135.0.5973.133 from Opera (opera-software✓) installed
+arthur@arthur-Latitude-3540:~/Downloads$
