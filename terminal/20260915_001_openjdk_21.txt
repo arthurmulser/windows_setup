@@ -1,0 +1,114 @@
+arthur@arthur-Latitude-3540:~/Downloads$ sudo apt update
+sudo apt install openjdk-21-jdk
+[sudo: authenticate] Password:     
+Hit:1 https://brave-browser-apt-release.s3.brave.com stable InRelease
+Get:2 https://packages.microsoft.com/repos/code stable InRelease [3,590 B]                                                                                                               
+Hit:3 https://deb.nodesource.com/node_24.x nodistro InRelease                                                                                                                            
+Get:4 https://packages.microsoft.com/repos/code stable/main amd64 Packages [29.6 kB]                                                                               
+Get:5 https://dl.google.com/linux/chrome-stable/deb stable InRelease [2,548 B]                                                                                     
+Get:6 https://dl.google.com/linux/chrome-stable/deb stable/main amd64 Packages [1,415 B]                 
+Hit:7 http://archive.ubuntu.com/ubuntu resolute InRelease                       
+Get:8 http://security.ubuntu.com/ubuntu resolute-security InRelease [137 kB]
+Get:9 http://archive.ubuntu.com/ubuntu resolute-updates InRelease [137 kB]
+Get:10 http://security.ubuntu.com/ubuntu resolute-security/main amd64 Packages [475 kB]
+Get:11 http://archive.ubuntu.com/ubuntu resolute-backports InRelease [137 kB]
+Get:12 http://security.ubuntu.com/ubuntu resolute-security/main Translation-en [111 kB]
+Get:13 http://security.ubuntu.com/ubuntu resolute-security/main amd64 Components [46.6 kB]
+Get:14 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 Components [43.4 kB]    
+Get:15 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 Packages [611 kB]              
+Get:16 http://archive.ubuntu.com/ubuntu resolute-updates/main Translation-en [146 kB]      
+Get:17 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 Components [97.8 kB]
+Get:18 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 Packages [293 kB]
+Get:19 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 Components [188 kB]
+Get:20 http://archive.ubuntu.com/ubuntu resolute-backports/universe amd64 Components [1,056 B]                                                                                                                                         
+Fetched 2,461 kB in 7s (372 kB/s)                                                                                                                                                                                                      
+45 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Installing:                     
+  openjdk-21-jdk
+
+Installing dependencies:
+  libxt-dev  openjdk-21-jdk-headless  openjdk-21-jre  openjdk-21-jre-headless
+
+Suggested packages:
+  libxt-doc  openjdk-21-demo  openjdk-21-source  visualvm  fonts-ipafont-gothic  fonts-ipafont-mincho  fonts-wqy-microhei  | fonts-wqy-zenhei  fonts-indic
+
+Summary:
+  Upgrading: 0, Installing: 5, Removing: 0, Not Upgrading: 45
+  Download size: 133 MB
+  Space needed: 305 MB / 49.9 GB available
+
+Continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu resolute/main amd64 libxt-dev amd64 1:1.2.1-1.3build1 [396 kB]
+Get:2 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 openjdk-21-jre-headless amd64 21.0.12+8-1~26.04 [46.6 MB]
+Get:3 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 openjdk-21-jre amd64 21.0.12+8-1~26.04 [226 kB]                                                                                                                 
+Get:4 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 openjdk-21-jdk-headless amd64 21.0.12+8-1~26.04 [83.1 MB]                                                                                                       
+Get:5 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 openjdk-21-jdk amd64 21.0.12+8-1~26.04 [2,645 kB]                                                                                                               
+Fetched 133 MB in 10s (12.8 MB/s)                                                                                                                                                                                                      
+Selecting previously unselected package libxt-dev:amd64.
+(Reading database… 266250 files and directories currently installed.)
+Preparing to unpack …/libxt-dev_1%3a1.2.1-1.3build1_amd64.deb…
+Unpacking libxt-dev:amd64 (1:1.2.1-1.3build1)…
+Selecting previously unselected package openjdk-21-jre-headless:amd64.
+Preparing to unpack …/openjdk-21-jre-headless_21.0.12+8-1~26.04_amd64.deb…
+Unpacking openjdk-21-jre-headless:amd64 (21.0.12+8-1~26.04)…
+Selecting previously unselected package openjdk-21-jre:amd64.
+Preparing to unpack …/openjdk-21-jre_21.0.12+8-1~26.04_amd64.deb…
+Unpacking openjdk-21-jre:amd64 (21.0.12+8-1~26.04)…
+Selecting previously unselected package openjdk-21-jdk-headless:amd64.
+Preparing to unpack …/openjdk-21-jdk-headless_21.0.12+8-1~26.04_amd64.deb…
+Unpacking openjdk-21-jdk-headless:amd64 (21.0.12+8-1~26.04)…
+Selecting previously unselected package openjdk-21-jdk:amd64.
+Preparing to unpack …/openjdk-21-jdk_21.0.12+8-1~26.04_amd64.deb…
+Unpacking openjdk-21-jdk:amd64 (21.0.12+8-1~26.04)…
+Setting up openjdk-21-jre-headless:amd64 (21.0.12+8-1~26.04)…
+Setting up libxt-dev:amd64 (1:1.2.1-1.3build1)…
+Processing triggers for desktop-file-utils (0.28-1build1)…
+Processing triggers for hicolor-icon-theme (0.18-2build1)…
+Processing triggers for gnome-menus (3.38.1-1ubuntu1)…
+Processing triggers for man-db (2.13.1-1build1)…
+Processing triggers for ca-certificates-java (20260311)…
+done.
+Setting up openjdk-21-jre:amd64 (21.0.12+8-1~26.04)…
+Setting up openjdk-21-jdk-headless:amd64 (21.0.12+8-1~26.04)…
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jar to provide /usr/bin/jar (jar) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jarsigner to provide /usr/bin/jarsigner (jarsigner) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/javac to provide /usr/bin/javac (javac) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/javadoc to provide /usr/bin/javadoc (javadoc) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/javap to provide /usr/bin/javap (javap) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jcmd to provide /usr/bin/jcmd (jcmd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jdb to provide /usr/bin/jdb (jdb) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jdeprscan to provide /usr/bin/jdeprscan (jdeprscan) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jdeps to provide /usr/bin/jdeps (jdeps) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jfr to provide /usr/bin/jfr (jfr) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jimage to provide /usr/bin/jimage (jimage) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jinfo to provide /usr/bin/jinfo (jinfo) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jlink to provide /usr/bin/jlink (jlink) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jmap to provide /usr/bin/jmap (jmap) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jmod to provide /usr/bin/jmod (jmod) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jps to provide /usr/bin/jps (jps) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jrunscript to provide /usr/bin/jrunscript (jrunscript) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jshell to provide /usr/bin/jshell (jshell) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jstack to provide /usr/bin/jstack (jstack) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jstat to provide /usr/bin/jstat (jstat) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jstatd to provide /usr/bin/jstatd (jstatd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jwebserver to provide /usr/bin/jwebserver (jwebserver) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/serialver to provide /usr/bin/serialver (serialver) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jhsdb to provide /usr/bin/jhsdb (jhsdb) in auto mode
+Setting up openjdk-21-jdk:amd64 (21.0.12+8-1~26.04)…
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jconsole to provide /usr/bin/jconsole (jconsole) in auto mode
+arthur@arthur-Latitude-3540:~/Downloads$ java -version
+openjdk version "25.0.4" 2026-07-21
+OpenJDK Runtime Environment (build 25.0.4+7-1-26.04-Ubuntu)
+OpenJDK 64-Bit Server VM (build 25.0.4+7-1-26.04-Ubuntu, mixed mode, sharing)
+arthur@arthur-Latitude-3540:~/Downloads$ 
+
+---
+
+arthur@arthur-Latitude-3540:/run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b/_projetos/mars62$ java -version
+openjdk version "25.0.4" 2026-07-21
+OpenJDK Runtime Environment (build 25.0.4+7-1-26.04-Ubuntu)
+OpenJDK 64-Bit Server VM (build 25.0.4+7-1-26.04-Ubuntu, mixed mode, sharing)
+arthur@arthur-Latitude-3540:/run/media/arthur/16f35587-adb2-4d60-a70a-d79b1401cf7b/_projetos/mars62$ flutter config --jdk-dir="/usr/lib/jvm/java-21-openjdk-amd64"
+Setting "jdk-dir" value to "/usr/lib/jvm/java-21-openjdk-amd64".
+
+You may need to restart any open editors for them to read new settings.
