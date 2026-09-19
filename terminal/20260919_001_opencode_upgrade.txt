@@ -1,0 +1,18 @@
+arthur@arthur-Latitude-3540:~/Downloads$ opencode upgrade
+
+                                   ▄     
+  █▀▀█ █▀▀█ █▀▀█ █▀▀▄ █▀▀▀ █▀▀█ █▀▀█ █▀▀█
+  █  █ █  █ █▀▀▀ █  █ █    █  █ █  █ █▀▀▀
+  ▀▀▀▀ █▀▀▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀▀
+
+┌  Upgrade
+│
+●  Using method: curl
+│
+●  From 1.17.18 → 1.18.31
+│
+◇  Upgrade complete
+│
+└  Done
+
+arthur@arthur-Latitude-3540:~/Downloads$
