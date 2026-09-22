@@ -1,3 +1,5 @@
+19:16:15	CREATE TABLE tb_turnos_respostas (     idtb_turnos_respostas BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,     idtb_entidades BIGINT UNSIGNED NOT NULL,     idtb_formularios_perguntas BIGINT UNSIGNED NOT NULL,     idtb_turnos BIGINT UNSIGNED NOT NULL,     identificador_os VARCHAR(128) NULL,     resposta_txt VARCHAR(256) NULL,     resposta_int INT NULL,     idtb_ativo TINYINT(1) NOT NULL DEFAULT 1,     dt_insert DATETIME NOT NULL,     login_insert VARCHAR(64) NOT NULL,     dt_update DATETIME NULL,     login_update VARCHAR(64) NULL,     PRIMARY KEY (idtb_turnos_respostas),     CONSTRAINT fk_tb_turnos_respostas_entidades FOREIGN KEY (idtb_entidades)         REFERENCES tb_entidades (idtb_entidades)         ON DELETE RESTRICT,     CONSTRAINT fk_tb_turnos_respostas_formularios_perguntas FOREIGN KEY (idtb_formularios_perguntas)         REFERENCES tb_formularios_perguntas (idtb_formularios_perguntas)         ON DELETE RESTRICT,     CONSTRAINT fk_tb_turnos_respostas_turnos FOREIGN KEY (idtb_turnos)         REFERENCES tb_turnos (idtb_turnos)         ON DELETE RESTRICT )	0 row(s) affected, 1 warning(s): 1681 Integer display width is deprecated and will be removed in a future release.	0.294 sec
+
 08:06:02	ALTER TABLE tb_turnos RENAME COLUMN version TO app_version	0 row(s) affected Records: 0  Duplicates: 0  Warnings: 0	0.205 sec
 
 21:47:06	CREATE TABLE `tb_turnos_entidades` (     `idtb_turnos_entidades` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,     `idtb_entidades` BIGINT UNSIGNED NOT NULL,     `idtb_turnos` BIGINT UNSIGNED NOT NULL,     `is_motorista` TINYINT(1) NULL,     `idtb_ativo` TINYINT(1) NOT NULL DEFAULT 1,     `dt_insert` DATETIME NOT NULL,     `login_insert` VARCHAR(64) NOT NULL,     `dt_update` DATETIME NULL,     `login_update` VARCHAR(64) NULL,     PRIMARY KEY (`idtb_turnos_entidades`),     INDEX `tb_turnos_entidades_idtb_entidades_index` (`idtb_entidades`),     INDEX `tb_turnos_entidades_idtb_turnos_index` (`idtb_turnos`),     CONSTRAINT `tb_turnos_entidades_idtb_entidades_foreign` FOREIGN KEY (`idtb_entidades`)         REFERENCES `tb_entidades` (`idtb_entidades`)         ON DELETE RESTRICT,     CONSTRAINT `tb_turnos_entidades_idtb_turnos_foreign` FOREIGN KEY (`idtb_turnos`)         REFERENCES `tb_turnos` (`idtb_turnos`)         ON DELETE RESTRICT )  ENGINE=INNODB	0 row(s) affected, 2 warning(s): 1681 Integer display width is deprecated and will be removed in a future release. 1681 Integer display width is deprecated and will be removed in a future release.	0.294 sec
@@ -55,22 +57,6 @@
 23:22:31	ALTER TABLE tb_animais MODIFY idtb_empresas BIGINT UNSIGNED NOT NULL	37 row(s) affected Records: 37  Duplicates: 0  Warnings: 0	0.306 sec
 
 23:22:26	ALTER TABLE tb_animais DROP FOREIGN KEY tb_animais_tbfk_3	0 row(s) affected Records: 0  Duplicates: 0  Warnings: 0	0.204 sec
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 --
 
