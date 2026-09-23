@@ -1,3 +1,11 @@
+09:41:05	alter table tb_turnos   add index tb_turnos_idtb_turnos_tipos_index (idtb_turnos_tipos),   add constraint tb_turnos_idtb_turnos_tipos_foreign     foreign key (idtb_turnos_tipos)     references tb_turnos_tipos (idtb_turnos_tipos)     on delete restrict	0 row(s) affected Records: 0  Duplicates: 0  Warnings: 0	0.202 sec
+
+09:41:05	alter table tb_turnos   add index tb_turnos_idtb_equipes_index (idtb_equipes),   add constraint tb_turnos_idtb_equipes_foreign     foreign key (idtb_equipes)     references tb_equipes (idtb_equipes)     on delete restrict	0 row(s) affected Records: 0  Duplicates: 0  Warnings: 0	0.195 sec
+
+09:41:04	alter table tb_turnos   add index tb_turnos_idtb_entidades_index (idtb_entidades),   add constraint tb_turnos_idtb_entidades_foreign     foreign key (idtb_entidades)     references tb_entidades (idtb_entidades)     on delete restrict	0 row(s) affected Records: 0  Duplicates: 0  Warnings: 0	0.197 sec
+
+09:41:04	alter table tb_turnos   add index tb_turnos_idtb_empresas_index (idtb_empresas),   add constraint tb_turnos_idtb_empresas_foreign     foreign key (idtb_empresas)     references tb_empresas (idtb_empresas)     on delete restrict	0 row(s) affected Records: 0  Duplicates: 0  Warnings: 0	0.191 sec
+
 22:04:17	alter table `tb_turnos_eventos` modify `idtb_entidades` bigint unsigned null	0 row(s) affected Records: 0  Duplicates: 0  Warnings: 0	0.330 sec
 
 21:45:37	alter table `tb_turnos_respostas` modify `idtb_entidades` bigint unsigned null	0 row(s) affected Records: 0  Duplicates: 0  Warnings: 0	0.208 sec
