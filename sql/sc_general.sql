@@ -1,3 +1,5 @@
+22:04:17	alter table `tb_turnos_eventos` modify `idtb_entidades` bigint unsigned null	0 row(s) affected Records: 0  Duplicates: 0  Warnings: 0	0.330 sec
+
 21:45:37	alter table `tb_turnos_respostas` modify `idtb_entidades` bigint unsigned null	0 row(s) affected Records: 0  Duplicates: 0  Warnings: 0	0.208 sec
 
 19:55:57	ALTER TABLE tb_turnos_eventos     DROP FOREIGN KEY tb_turnos_eventos_idtb_turnos_tipos_foreign,     DROP INDEX tb_turnos_eventos_idtb_turnos_tipos_index,     CHANGE COLUMN idtb_turnos_tipos idtb_turnos_eventos_tipos BIGINT UNSIGNED NOT NULL,     ADD INDEX tb_turnos_eventos_idtb_turnos_eventos_tipos_index (idtb_turnos_eventos_tipos),     ADD CONSTRAINT tb_turnos_eventos_idtb_turnos_eventos_tipos_foreign         FOREIGN KEY (idtb_turnos_eventos_tipos)         REFERENCES tb_turnos_eventos_tipos (idtb_turnos_eventos_tipos)         ON DELETE RESTRICT	0 row(s) affected Records: 0  Duplicates: 0  Warnings: 0	0.303 sec
