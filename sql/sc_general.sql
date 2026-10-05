@@ -1,3 +1,5 @@
+UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `pergunta` = 'MALHAU COM BORRACHAS' WHERE (`idtb_perguntas` = '22');
+
 15:37:21	INSERT INTO `tb_turnos_eventos_tipos` (     `idtb_turnos_eventos_tipos`,     `nome`,     `idtb_ativo`,     `dt_insert`,     `login_insert` ) VALUES  (1, 'PAUSA', 1, NOW(), 'admin'), (2, 'RETORNO', 1, NOW(), 'admin'), (3, 'INÍCIO DO CHECK VEICULAR', 1, NOW(), 'admin'), (4, 'FIM DO CHECK VEICULAR', 1, NOW(), 'admin'), (5, 'INÍCIO DO CHECK EPC', 1, NOW(), 'admin'), (6, 'FIM DO CHECK EPC', 1, NOW(), 'admin'), (7, 'INÍCIO DO CHECK EPI', 1, NOW(), 'admin'), (8, 'FIM DO CHECK EPI', 1, NOW(), 'admin'), (9, 'INÍCIO DA APR', 1, NOW(), 'admin'), (10, 'FIM DA APR', 1, NOW(), 'admin')	10 row(s) affected Records: 10  Duplicates: 0  Warnings: 0	0.149 sec
 
 09:41:05	alter table tb_turnos   add index tb_turnos_idtb_turnos_tipos_index (idtb_turnos_tipos),   add constraint tb_turnos_idtb_turnos_tipos_foreign     foreign key (idtb_turnos_tipos)     references tb_turnos_tipos (idtb_turnos_tipos)     on delete restrict	0 row(s) affected Records: 0  Duplicates: 0  Warnings: 0	0.202 sec
