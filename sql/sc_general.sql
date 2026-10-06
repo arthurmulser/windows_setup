@@ -1,5 +1,7 @@
 
+10:16:40	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `pergunta` = 'DETECTOR DE TENSÃO FAIXA MÚLTIPLA BT / MT (0,1-1 KV; 5-20 KV)' WHERE (`idtb_perguntas` = '61')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.159 sec
 
+10:16:40	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `pergunta` = 'CABEÇOTE UNIVERSAL PARA VARA DE MANOBRA TIPO CP1 / U' WHERE (`idtb_perguntas` = '45')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.211 sec
 
 10:03:34	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `pergunta` = 'COBERTURA RÍGIDA PARA CONDUTOR 25 MM X 1560 MM - CLASSE 2' WHERE (`idtb_perguntas` = '96')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.144 sec
 
