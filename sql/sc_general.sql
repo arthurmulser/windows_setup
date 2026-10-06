@@ -1,3 +1,8 @@
+15:57:09	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `idtb_perguntas_grupos` = '1' WHERE (`idtb_perguntas` = '65')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.246 sec
+
+15:57:09	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `idtb_perguntas_grupos` = '1' WHERE (`idtb_perguntas` = '64')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.143 sec
+
+15:57:08	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `idtb_perguntas_grupos` = '1' WHERE (`idtb_perguntas` = '63')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.142 sec
 
 10:16:40	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `pergunta` = 'DETECTOR DE TENSÃO FAIXA MÚLTIPLA BT / MT (0,1-1 KV; 5-20 KV)' WHERE (`idtb_perguntas` = '61')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.159 sec
 
