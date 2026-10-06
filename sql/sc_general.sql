@@ -1,3 +1,44 @@
+
+
+
+10:03:34	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `pergunta` = 'COBERTURA RÍGIDA PARA CONDUTOR 25 MM X 1560 MM - CLASSE 2' WHERE (`idtb_perguntas` = '96')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.144 sec
+
+10:03:34	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `pergunta` = 'COBERTURA CIRCULAR 300 MM X 1800 MM - CLASSE 4' WHERE (`idtb_perguntas` = '94')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.204 sec
+
+10:03:34	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `pergunta` = 'COBERTURA CIRCULAR 300 MM X 1200 MM OU 1600 MM - CLASSE 4' WHERE (`idtb_perguntas` = '93')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.205 sec
+
+10:03:33	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `pergunta` = 'COBERTURA CIRCULAR 150 MM X 900 MM - CLASSE 2' WHERE (`idtb_perguntas` = '92')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.204 sec
+
+10:03:33	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `pergunta` = 'COBERTURA CIRCULAR 150 MM X 600 MM - CLASSE 4' WHERE (`idtb_perguntas` = '91')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.204 sec
+
+10:03:33	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `pergunta` = 'COBERTURA CIRCULAR 150 MM X 600 MM - CLASSE 2' WHERE (`idtb_perguntas` = '90')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.202 sec
+
+10:03:33	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `pergunta` = 'COBERTURA CIRCULAR 150 MM X 300 MM - CLASSE 4' WHERE (`idtb_perguntas` = '89')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.207 sec
+
+10:03:33	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `pergunta` = 'BY-PASS GRAMPO TORÇÃO 35 MM 200 A OU 300 A CLASSE 2' WHERE (`idtb_perguntas` = '88')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.204 sec
+
+10:03:32	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `pergunta` = 'BY-PASS GRAMPO TORÇÃO 95 MM 400 A CLASSE 2' WHERE (`idtb_perguntas` = '87')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.204 sec
+
+10:03:32	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `pergunta` = 'BY-PASS GRAMPO TORÇÃO 35 MM 200 A CLASSE 4' WHERE (`idtb_perguntas` = '86')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.204 sec
+
+10:03:32	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `pergunta` = 'FREIO AUTOBLOCANTE PARA KIT DE RESGATE (AUTO BLOC ABS 99 X 48 X 30 MM)' WHERE (`idtb_perguntas` = '73')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.204 sec
+
+10:03:32	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `pergunta` = 'ESCADA EXTENSÍVEL 5,4 X 9,6 M: AT;' WHERE (`idtb_perguntas` = '67')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.264 sec
+
+10:03:32	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `pergunta` = 'ESCADA EXTENSÍVEL 4,33 X 7,26 M: 23 DEGRAUS;' WHERE (`idtb_perguntas` = '66')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.145 sec
+
+10:03:31	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `pergunta` = 'CORDA DE POLIURETANO PARA IÇAMENTO DE MATERIAIS, 8 MM OU 10 MM, 30 M' WHERE (`idtb_perguntas` = '59')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.204 sec
+
+10:03:31	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `pergunta` = 'COBERTURA RÍGIDA PARA CONDUTOR 25 MM X 1460 MM - CLASSE 4' WHERE (`idtb_perguntas` = '53')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.204 sec
+
+10:03:31	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `pergunta` = 'COBERTURA CIRCULAR 150 MM X 300 MM - CLASSE 2' WHERE (`idtb_perguntas` = '51')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.261 sec
+
+10:03:31	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `pergunta` = 'BASTÃO DE TRAÇÃO ISOLADO TIPO TORNIQUETE, 32 MM OU 38 MM × 1,10 M' WHERE (`idtb_perguntas` = '36')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.148 sec
+
+10:03:31	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `pergunta` = 'BY-PASS GRAMPO TORÇÃO 35 MM 200 A OU 300 A CLASSE 2' WHERE (`idtb_perguntas` = '44')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.196 sec
+
+09:45:31	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas`  SET      `pergunta` = 'LENÇOL ISOLANTE 3 ENTALHES TIPO II - 900 MM X 1100 MM CLASSE 4' WHERE     (idtb_perguntas = '79')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.144 sec
+
 09:24:01	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas`  SET      `pergunta` = 'COBERTURA RÍGIDA PARA CONDUTOR 25MM X 1460MM - CLASSE 4' WHERE     (idtb_perguntas = '53')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.269 sec
 
 09:22:06	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas`  SET      `pergunta` = 'COBERTURA PARA CONDUTOR BORRACHA FLEXÍVEL TIPO II - CLASSE 2' WHERE     (idtb_perguntas = '52')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.204 sec
