@@ -1,3 +1,14 @@
+
+16:17:30	UPDATE `vedvoyager_vedvoyager_prod`.`sec_users` SET `name` = 'Cleuvan' WHERE (`login` = 'alves.38')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.145 sec
+
+16:15:11	INSERT INTO `vedvoyager_vedvoyager_prod`.`sec_users` (`login`, `pswd`, `name`, `email`, `active`, `idtb_empresas`)  VALUES ('alves.16', '66a7bfa44ce8d16eb9f3dc47f89b9ba4', 'Clodoaldo', 'awdcosmos@gmail.com', 'Y', '6')	1 row(s) affected	0.146 sec
+
+16:09:13	INSERT INTO `vedvoyager_vedvoyager_prod`.`sec_users` (`login`, `pswd`, `name`, `email`, `active`, `idtb_empresas`)  VALUES ('alves.38', 'bc22105e493390cc280fcb5c5e0cd6eb', 'Samoel', 'awdcosmos@gmail.com', 'Y', '6')	1 row(s) affected	0.194 sec
+
+11:43:39	ALTER TABLE `vedvoyager_vedvoyager_prod`.`tb_turnos` AUTO_INCREMENT = 0	0 row(s) affected Records: 0  Duplicates: 0  Warnings: 0	0.204 sec
+
+11:09:18	INSERT INTO `vedvoyager_vedvoyager_prod`.`tb_turnos_tipos` (`nome`, `idtb_ativo`, `dt_insert`, `login_insert`)  VALUES ('OPERACIONAL - ENGENHARIA ELÉTRICA', '1', now(), 'admin')	1 row(s) affected	0.202 sec
+
 10:24:51	UPDATE `vedvoyager_vedvoyager_prod`.`tb_formularios`  SET      `nome` = 'EPC CONSTRUÇÃO' WHERE     (idtb_formularios = '7')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.206 sec
 
 09:52:07	INSERT INTO `vedvoyager_vedvoyager_prod`.`sec_users` (`login`, `pswd`, `name`, `email`, `active`, `idtb_empresas`) VALUES ('alves.35', 'd4c9b6e9848bd8a31fef62277e0c36ca', 'Samoel', 'awdcosmos@gmail.com', 'Y', '6')	1 row(s) affected	0.212 sec
