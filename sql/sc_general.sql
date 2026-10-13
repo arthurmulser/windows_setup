@@ -1,3 +1,7 @@
+10:24:51	UPDATE `vedvoyager_vedvoyager_prod`.`tb_formularios`  SET      `nome` = 'EPC CONSTRUÇÃO' WHERE     (idtb_formularios = '7')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.206 sec
+
+09:52:07	INSERT INTO `vedvoyager_vedvoyager_prod`.`sec_users` (`login`, `pswd`, `name`, `email`, `active`, `idtb_empresas`) VALUES ('alves.35', 'd4c9b6e9848bd8a31fef62277e0c36ca', 'Samoel', 'awdcosmos@gmail.com', 'Y', '6')	1 row(s) affected	0.212 sec
+
 15:57:09	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `idtb_perguntas_grupos` = '1' WHERE (`idtb_perguntas` = '65')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.246 sec
 
 15:57:09	UPDATE `vedvoyager_vedvoyager_prod`.`tb_perguntas` SET `idtb_perguntas_grupos` = '1' WHERE (`idtb_perguntas` = '64')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.143 sec
