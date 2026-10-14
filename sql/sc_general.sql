@@ -1,3 +1,4 @@
+08:59:11	INSERT INTO `vedvoyager_vedvoyager_prod`.`sec_users` (`login`, `pswd`, `name`, `email`, `active`, `idtb_empresas`)   VALUES ('alves.28', '93abc96eca45794bfe546760b60c783c', 'Josimar', 'awdcosmos@gmail.com', 'Y', '6')	1 row(s) affected	0.194 sec
 
 16:17:30	UPDATE `vedvoyager_vedvoyager_prod`.`sec_users` SET `name` = 'Cleuvan' WHERE (`login` = 'alves.38')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.145 sec
 
