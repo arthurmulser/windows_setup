@@ -1,3 +1,9 @@
+22:41:13	INSERT INTO tb_turnos_eventos_tipos (nome, idtb_ativo, dt_insert, login_insert)  VALUES ('ASSINATURA', '1', '2026-11-05 00:00:00', 'admin')	1 row(s) affected	0.187 sec
+
+-- fiz insert do user alves.91;
+
+22:35:18	update tb_perguntas set idtb_perguntas_tipos = 4 where idtb_perguntas_grupos = 2	67 row(s) affected Rows matched: 67  Changed: 67  Warnings: 0	0.206 sec
+
 22:18:38	UPDATE `vedvoyager_vedvoyager_prod`.`tb_eventos` SET `idtb_animais` = '10' WHERE (`idtb_eventos` = '277')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.201 sec
 
 22:18:38	UPDATE `vedvoyager_vedvoyager_prod`.`tb_eventos` SET `idtb_animais` = '5' WHERE (`idtb_eventos` = '276')	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.208 sec
