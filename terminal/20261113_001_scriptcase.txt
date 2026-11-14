@@ -1,0 +1,6 @@
+arthur@arthur-Latitude-3540:~/Downloads$ sudo ./scriptcase_linux_installer_*.run
+[sudo: authenticate] Password:         
+sudo: cannot execute '/home/arthur/Downloads/scriptcase_linux_installer_x86_64_v10.2.001.run': Permission denied (os error 13)
+arthur@arthur-Latitude-3540:~/Downloads$ chmod +x scriptcase_linux_installer_x86_64_v10.2.001.run
+arthur@arthur-Latitude-3540:~/Downloads$ sudo ./scriptcase_linux_installer_*.run
+arthur@arthur-Latitude-3540:~/Downloads$
