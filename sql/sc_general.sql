@@ -1,3 +1,5 @@
+13:17:51	INSERT INTO `vedvoyager_vedvoyager_prod`.`sec_users` (`login`, `pswd`, `name`, `email`, `active`, `idtb_empresas`)    VALUES ('alves', 'aafaa0f87ec85ccf7752a4a9e9c6146e', 'Alves', 'awdcosmos@gmail.com', 'Y', '6')	1 row(s) affected	0.223 sec
+
 22:41:13	INSERT INTO tb_turnos_eventos_tipos (nome, idtb_ativo, dt_insert, login_insert)  VALUES ('ASSINATURA', '1', '2026-11-05 00:00:00', 'admin')	1 row(s) affected	0.187 sec
 
 -- fiz insert do user alves.91;
